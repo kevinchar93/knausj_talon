@@ -1,8 +1,11 @@
+app: /bash/
 app: /terminal/
 app: cmd.exe
 app: iTerm2
 app: Terminal
 app: Windows Command Processor
+app: Visual Studio Code
+app: Code.exe
 -
 git add patch: insert("git add . -p\n")
 git add: insert("git add ")
