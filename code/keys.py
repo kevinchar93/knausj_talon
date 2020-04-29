@@ -121,9 +121,12 @@ simple_keys = [
     'home', 'pageup', 'pagedown', 'end',
 ]
 alternate_keys = {
-    'delete': 'backspace', 'junk': 'backspace',
-    'forward delete': 'delete',
+    'clear': 'backspace',
+    'delete': 'delete',
+    'delhi': 'delete',
+    'shock': 'enter',
 }
+
 keys = {k: k for k in simple_keys}
 keys.update(alternate_keys)
 ctx.lists['self.special'] = keys
