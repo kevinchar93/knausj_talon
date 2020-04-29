@@ -4,28 +4,28 @@ find it:
 next one:
 	edit.find_next()
 
-go word left: 
+(go word left | stone): 
 	edit.word_left()
 	
-go word right: 
+(go word right | step): 
 	edit.word_right()
 
-go left: 
+[go] left: 
 	edit.left()
 
-go right: 
+[go] right: 
 	edit.right()
 
-go up: 
+[go] up: 
 	edit.up()
 
-go down: 
+[go] down: 
 	edit.down()
 
-go line start: 
+(go line start | paul | pull): 
 	edit.line_start()
 	
-go line end: 
+(go line end | push): 
 	edit.line_end()
 
 go way left: 
@@ -41,45 +41,45 @@ go way down:
 go way up: 
 	edit.file_start()
 
-go page down:
+[go] page down:
 	edit.page_down()
 
-go page up:
+[go] page up:
 	edit.page_up()
 
 # selecting
-select line: 
+((select | sell) line): 
 	edit.line_start()
 	edit.extend_line_end()
 
-select left: 
+((select | sell) left): 
 	edit.extend_left()
 	
-select right: 
+((select | sell) right): 
 	edit.extend_right()
 
-select up: 
+((select | sell) up): 
 	edit.extend_line_up()
 	
-select down: 
+((select | sell) down): 
 	edit.extend_line_down()
 
-select word left:
+((select | sell) word left | sell stone):
 	edit.extend_word_left()
 	
-select word right: 
+((select | sell) word right | sell step): 
 	edit.extend_word_right()
 
-select way left:
+((select | sell) way left | sell pull):
 	edit.extend_line_start()
 	
-select way right: 
+((select | sell) way right | sell push): 
 	edit.extend_line_end()
 	
-select way up: 
+((select | sell) way up): 
 	edit.extend_file_start()
 	
-select way down: 
+((select | sell) way down): 
 	edit.extend_file_end()
 
 # editing
@@ -109,15 +109,15 @@ clear down:
 	edit.extend_line_down()
 	edit.delete()
 
-clear word left: 
+(clear word left | splat left): 
 	edit.extend_word_left()
 	edit.delete()
 	
-clear word right: 
+(clear word right | splat right): 
 	edit.extend_word_right()
 	edit.delete()
 
-clear way left: 
+(clear way left | scratch): 
 	edit.extend_line_start()
 	edit.delete()
 
