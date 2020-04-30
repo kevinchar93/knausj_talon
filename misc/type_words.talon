@@ -9,5 +9,3 @@ type up: "up"
 type down: "down"
 type left: "left"
 type right: "right"
-
-type route: "root"
