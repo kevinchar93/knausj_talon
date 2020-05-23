@@ -26,7 +26,7 @@ M D five: "md5"
 args: 
 	insert("()")
 	key(left)
-[inside] (index | array): 
+inside (index | array): 
 	insert("[]") 
 	key(left)
 block: 
@@ -37,7 +37,7 @@ comment see: "// "
 word queue: "queue"
 word eye: "eye"
 word iter: "iter"
-word no: "NULL"
+#word no: "NULL"
 word cmd: "cmd"
 word dup: "dup"
 word streak: 
@@ -62,7 +62,7 @@ state past: "pass"
 zoom [in]: edit.zoom_in()
 zoom out: edit.zoom_out()
 (page | scroll) up: key(pgup)
-(page | scroll) [down]: key(pgdown)
+(page | scroll) down: key(pgdown)
 (copy | stoush | stoosh): edit.copy()
 (cut | kill): edit.cut()
 (paste | spark): edit.paste()
@@ -83,4 +83,4 @@ wipe: key(backspace)
 	insert("  ") 
 	key(left)
 funny: "ha ha"
-#menu: key(alt)
+([Lynn | Lennox | Lynn ox | lie nux | lin nix]): "Linux"

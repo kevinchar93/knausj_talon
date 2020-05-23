@@ -1,6 +1,6 @@
 os: windows
-app: Visual Studio Code
-app: Code.exe
+app: Sublime Text
+app: sublime_text.exe
 
 -
 
@@ -49,5 +49,9 @@ sidebar: key(ctrl-b)
 # integrated terminal
 terminal show: key(ctrl-`)
 terminal create: key(ctrl-shift-`)
+terminal scroll up : key(ctrl-up)
+terminal scroll down : key(ctrl-down)
+terminal page up : key(shift-pageup)
+terminal page down : key(shift-pagedown)
 terminal home : key(ctrl-home)
 terminal end : key(ctrl-end)

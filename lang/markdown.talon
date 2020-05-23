@@ -10,5 +10,8 @@ new markdown rule:
 ((markdown | mark) header five): "##### "
 ((markdown | mark) header six): "####### "
 
+((markdown | mark) in-line code):
+    insert("__``__")
+    key(left left left)
 
 ((markdown | mark) list): "* "

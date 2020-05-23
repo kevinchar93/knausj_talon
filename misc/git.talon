@@ -6,6 +6,13 @@ app: Terminal
 app: Windows Command Processor
 app: Visual Studio Code
 app: Code.exe
+app: ssh.exe
+app: /git-cmd/
+app: ConEmuC64.exe
+app: ConEmu64.exe
+app: conhost.exe
+app: conemu-cyg-64.exe
+app: git-cmd.exe
 -
 git add patch: insert("git add . -p\n")
 git add: insert("git add ")
