@@ -119,7 +119,9 @@ ctx.lists['self.arrow'] = {
 simple_keys = [
     'tab', 'escape', 'enter', 'space',
     'home', 'pageup', 'pagedown', 'end',
+    'insert',
 ]
+
 alternate_keys = {
     'clear': 'backspace',
     'delete': 'delete',
