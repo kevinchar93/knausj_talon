@@ -1,12 +1,18 @@
+code.language: javascript
+-
 # keywords
-type asynchronous: "async "
-type await: "await "
-type function: "function "
-type let: "let " 
-type const: "const "
-type new: "new "
-type this: "this."
-type export: "export "
-type class: "class "
-type return: "return;"
-type else: "else "
+asynchronous: "async "
+await: "await "
+function: "function "
+let: "let " 
+const: "const "
+new: "new "
+this: "this."
+export: "export "
+class: "class "
+return: "return;"
+else: "else "
+console log:
+    "console.log();"
+    key(left)
+    key(left)

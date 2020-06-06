@@ -66,7 +66,7 @@ outdent [line]: key(ctrl-[)
 # go to beginning of line
 # go to end of line
 (file beginning | Beginning of file): key(ctrl-home)
-(file end | end of file): key(ctrl-home)
+(file end | end of file): key(ctrl-end)
 # scroll line up
 # scroll line down
 (nick | cruise up): key(alt-pageup)

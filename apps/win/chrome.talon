@@ -4,6 +4,12 @@ app: chrome.exe
 -
 tag(): browser
 	
+flip: key(ctrl-tab)
+flop: key(ctrl-shift-tab)
+google search: key(ctrl-k)
+search: key(ctrl-f)
+address bar: key(alt-d)
+
 #action(browser.address):
 
 action(browser.bookmark):

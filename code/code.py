@@ -6,6 +6,12 @@ key = actions.key
 
 extension_lang_map = {
 "py"   : "python",
+"js"   : "javascript",
+"go"   : "go",
+"html" : "html",
+"css"  : "css",
+"ts"   : "typescript",
+"sh"   : "bash",
 "cs"   : "csharp",
 "cpp"  : "cplusplus",
 "h"    : "cplusplus",

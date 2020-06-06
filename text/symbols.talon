@@ -16,7 +16,7 @@ double dash: "--"
 ticky: "`"
 percent [sign]: "%"
 caret: "^"
-at sign: "@"
+(at sign | atte | atty): "@"
 (and sign | ampersand ): "&"
 pipe: "|"
 (dubquote | double quote): '"'

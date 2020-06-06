@@ -5,6 +5,7 @@ app: slack.exe
 #todo: some sort of plugin, consolidate with teams or something?
 -
 # Workspaces
+(slack | lack) laugh: ":laugh: "
 workspace <number>: key("ctrl-{number}")
 previous workspace: key(ctrl-shift-tab)
 next workspace: key(ctrl-tab)

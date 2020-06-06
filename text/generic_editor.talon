@@ -83,7 +83,7 @@ go way up:
 	edit.extend_file_end()
 
 # editing
-indent [more]:
+indent more:
 	edit.indent_more()
 
 (indent less | out dent):

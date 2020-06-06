@@ -13,7 +13,10 @@ app: ConEmu64.exe
 app: conhost.exe
 app: conemu-cyg-64.exe
 app: git-cmd.exe
+app: WindowsTerminal.exe
 -
+git clean: "git clean "
+get clean all: "git clean -fdx"
 git add patch: "git add . -p\n"
 git add: "git add "
 git bisect: "git bisect "

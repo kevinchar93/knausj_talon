@@ -8,7 +8,27 @@ app: ConEmu64.exe
 app: conhost.exe
 app: conemu-cyg-64.exe
 app: git-cmd.exe
+app: WindowsTerminal.exe
+app: mintty.exe
+app: conhost.exe
+app: cygwin-console-helper.exe
 -
+
+remove: "rm "
+recursive remove: "rm -rf "
+(Yum | yom) install: "yum install "
+(Yum | yom) remove: "yum remove "
+clean terminal:key(ctrl-l)
+find here: "find . -name "
+find in directory:
+  "find  -name "
+  key(left)
+  key(left)
+  key(left)
+  key(left)
+  key(left)
+  key(left)
+  key(left)
 
 run last: key(up enter)
 
