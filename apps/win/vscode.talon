@@ -127,7 +127,6 @@ keyboard shortcuts:
 # ==================== Basic Editing ====================
 
 # cut line:
-
 # copy line:
 
 move [line] up:
@@ -214,24 +213,46 @@ word wrap:
 
 # ==================== Navigation ====================
 
-[show] all symbols: key(ctrl-t)
-go-to line: key(ctrl-g)
 # go to file
-[go to] symbol: key(ctrl-shift-o)
-[show] problems panel: key(ctrl-shift-m)
-(next error | next warning): key(f8)
-((previous | last) error | (previous | last) warning): key(shift-f8)
-(navigate editor group history | nav edit history): key(ctrl-shift-tab)
-forward: key(alt-right)
-(back | backwards): key(alt-left)
-[move] focus: key(ctrl-m)
+
+[show] all symbols:
+    key(ctrl-t)
+
+go-to line:
+    key(ctrl-g)
+
+[go to] symbol:
+    key(ctrl-shift-o)
+
+[show] problems panel:
+    key(ctrl-shift-m)
+
+(next error | next warning):
+    key(f8)
+
+((previous | last) error | (previous | last) warning):
+    key(shift-f8)
+
+(navigate editor group history | nav edit history):
+    key(ctrl-shift-tab)
+
+forward:
+    key(alt-right)
+
+(back | backwards):
+    key(alt-left)
+
+[move] focus:
+    key(ctrl-m)
+
 
 # ==================== Search and Replace ====================
 
-# search and replace
-# multi-cursor and selection
-# rich languages editing
-# editor management
+# ==================== Multi-Cursor & Selection ====================
+
+# ==================== Rich Languages Editing ====================
+
+# ==================== Editor Management ====================
 close editor: key(ctrl-w)
 # file management
 # display
