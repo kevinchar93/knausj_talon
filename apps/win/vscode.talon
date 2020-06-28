@@ -49,11 +49,8 @@ redo:
     key(ctrl-z)
 
 # cut: (cut)
-
 # copy: (stoush)
-
 # paste: (spark)
-
 # find: (search)
 
 search:
@@ -71,9 +68,7 @@ replace files:
     key(ctrl-shift-h)
 
 # toggle line comment: (comment)
-
 # toggle block comment (block comment)
-
 # emmett expand abbreviation (tab)
 
 
@@ -88,13 +83,9 @@ shrink selection:
     key(shift-alt-left)
 
 # copy line up:
-
 # copy line down:
-
 # move line up:
-
 # move line down:
-
 # duplicate selection:
 
 
@@ -105,15 +96,10 @@ shrink selection:
 ([cursor | curse] [above | up ]): key(alt-ctrl-up)
 
 # add cursors to line ends:
-
 # add next occurrence:
-
 # add previous occurrence:
-
 # select all occurrences:
-
 # switch to control plus click for multi-cursor:
-
 # column selection mode:
 
 
@@ -137,46 +123,94 @@ keyboard shortcuts:
     key(ctrl-k)
     key(ctrl-s)
 
+
 # ==================== Basic Editing ====================
-# cut line
-# copy line
-move [line] up: key(alt-up)
-move [line] down: key(alt-down)
-copy [line] up: key(alt-up)
-copy [line] down: key(alt-down)
-delete line: key(shift-alt-k)
-insert line below: key(ctrl-enter)
-insert line above: key(ctrl-shift-enter)
-jump to matching [bracket]: key(ctrl-shift-\)
-indent [line]: key(ctrl-])
-outdent [line]: key(ctrl-[)
+
+# cut line:
+
+# copy line:
+
+move [line] up:
+    key(alt-up)
+
+move [line] down:
+    key(alt-down)
+
+copy [line] up:
+    key(alt-up)
+
+copy [line] down:
+    key(alt-down)
+
+delete line:
+    key(shift-alt-k)
+
+insert line below:
+    key(ctrl-enter)
+
+insert line above:
+    key(ctrl-shift-enter)
+
+jump to matching [bracket]:
+    key(ctrl-shift-\)
+
+indent [line]:
+    key(ctrl-])
+
+outdent [line]:
+    key(ctrl-[)
+
 # go to beginning of line
 # go to end of line
-(file beginning | Beginning of file): key(ctrl-home)
-(file end | end of file): key(ctrl-end)
+
+(file [beginning | begin] | Beginning of file):
+    key(ctrl-home)
+
+(file end | end of file):
+    key(ctrl-end)
+
 # scroll line up
 # scroll line down
-(nick | cruise up): key(alt-pageup)
-((knack | nack) | cruise down): key(alt-pagedown)
-fold region: key(ctrl-shift-[)
-unfold region: key(ctrl-shift-])
+
+( booze | nick | cruise up):
+    key(alt-pageup)
+
+( Drew's | (knack | nack) | cruise down):
+    key(alt-pagedown)
+
+[fold region | fold ]:
+    key(ctrl-shift-[)
+
+[unfold region | expand ]:
+    key(ctrl-shift-])
+
 fold all subregions:
     key(ctrl-k)
     key(ctrl-[)
+
 unfold all subregions:
     key(ctrl-k)
     key(ctrl-])
+
 fold all regions:
     key(ctrl-k)
     key(ctrl-0)
-unfold all regions
+
+unfold all regions:
     key(ctrl-k)
     key(ctrl-j)
+
 # add line comment
 # remove line comment
-comment: key(ctrl-/)
-block comment: key(shift-alt-a)
-word wrap: key(alt-z)
+
+comment:
+    key(ctrl-/)
+
+block comment:
+    key(shift-alt-a)
+
+word wrap:
+    key(alt-z)
 
 # ==================== Navigation ====================
 
@@ -190,10 +224,6 @@ go-to line: key(ctrl-g)
 (navigate editor group history | nav edit history): key(ctrl-shift-tab)
 forward: key(alt-right)
 (back | backwards): key(alt-left)
-line <number>:
-    key(ctrl-g)
-    "{number}"
-    key(enter)
 [move] focus: key(ctrl-m)
 
 # ==================== Search and Replace ====================
@@ -207,12 +237,76 @@ close editor: key(ctrl-w)
 # display
 show explorer: key(ctrl-shift-e)
 
+
+
+flip:
+    key(ctrl-k)
+    key(ctrl-pagedown)
+flop:
+    key(ctrl-k)
+    key(ctrl-pageup)
+
+ 
+# diff tool
+(next change | goneck): key(alt-f5)
+(previous change | gopreev): key(alt-shift-f5)
+
+
+# ========= Context Menu =========== 
+rename symbol: key(f2)
+change all occurrences: key(ctrl-f2)
+[go to] definition: key(f12)
+[show] references: key(shift-f12)
+
+complete: key(ctrl-space)
+spacey: " = "
+sidebar: key(ctrl-b)
+# ==================== MetaJump ====================
+
+character: key(alt-/)
+[jump | john]: key(ctrl-shift-alt-j)
+line: key(ctrl-shift-alt-l)
+select: key(alt-shift-/)
+add cursor: key(alt-ctrl-/)
+
+# ==================== ToDo ====================
+make task: key(alt-enter)
+task [done | complete]: key(alt-d)
+task [start | started]: key(alt-s)
+task [cancel | cancelled]: key(alt-c)
+task archive: key(ctrl+shift+a)
+
 # debug
 # integrated terminal
-terminal show: key(ctrl-`)
+terminal show: key(ctrl-')
 terminal create: key(ctrl-shift-`)
 terminal home : key(ctrl-home)
 terminal end : key(ctrl-end)
+
+# bookmarks
+bookmark: key(ctrl-alt-k)
+book next: key(ctrl-alt-l)
+(book [prove |  please | pre- | preev]): key(ctrl-alt-j)
+
+open recent:
+    key(ctrl-r)
+
+stage [selected]:
+    key(ctrl-k)
+    key(ctrl-alt-s)
+
+commit [staged]:
+    key(ctrl-k)
+    key(ctrl-alt-c)
+
+[open] changes:
+    key(ctrl-shift-p)
+    insert("Git: Open Changes")
+    key(enter)
+
+keyboard shortcuts:
+    key(ctrl-k)
+    key(ctrl-s)
 
 # action(user.ide_refactor):
 #   key(ctrl-a)
