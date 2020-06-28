@@ -116,29 +116,6 @@ shrink selection:
 
 # column selection mode:
 
-# diff tool
-(next change | goneck): key(alt-f5)
-(previous change | gopreev): key(alt-shift-f5)
-
-# selection menu
-
-# view menu
-
-# go menu
-
-# run menu
-
-# terminal menu
-
-# context menu
-rename symbol: key(f2)
-go to definition: key(f12)
-show references: key(shift-f12)
-
-complete: key(ctrl-space)
-spacey: " = "
-sidebar: key(ctrl-b)
-
 # ==================== General ====================
 (command [pallet | palette]): key(ctrl-shift-p)
 open: key(ctrl-p)
