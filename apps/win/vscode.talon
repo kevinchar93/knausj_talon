@@ -41,15 +41,80 @@ close workspace:
 # close window:
 
 
-search: key(ctrl-f)
-replace: key(ctrl-h)
+# =========== Edit Menu ===========
 
-search files: key(ctrl-shift-f)
-replace files: key(ctrl-shift-h)
+# undo: (undo)
+
+redo:
+    key(ctrl-z)
+
+# cut: (cut)
+
+# copy: (stoush)
+
+# paste: (spark)
+
+# find: (search)
+
+search:
+    key(ctrl-f)
+
+replace:
+    key(ctrl-h)
+
+# find in files: (search files)
+
+search files:
+    key(ctrl-shift-f)
+
+replace files:
+    key(ctrl-shift-h)
+
+# toggle line comment: (comment)
+
+# toggle block comment (block comment)
+
+# emmett expand abbreviation (tab)
 
 
-Cursor below: key(alt-ctrl-down)
-cursor above: key(alt-ctrl-up)
+# =========== Selection Menu ===========
+select all:
+    key(ctrl-a)
+
+expand selection:
+    key(shift-alt-right)
+
+shrink selection:
+    key(shift-alt-left)
+
+# copy line up:
+
+# copy line down:
+
+# move line up:
+
+# move line down:
+
+# duplicate selection:
+
+
+# add cursor above
+([cursor | curse] [below | down ]): key(alt-ctrl-down)
+
+# add cursor below
+([cursor | curse] [above | up ]): key(alt-ctrl-up)
+
+# add cursors to line ends:
+
+# add next occurrence:
+
+# add previous occurrence:
+
+# select all occurrences:
+
+# switch to control plus click for multi-cursor:
+
+# column selection mode:
 
 # diff tool
 (next change | goneck): key(alt-f5)
