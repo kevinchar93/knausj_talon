@@ -116,12 +116,23 @@ shrink selection:
 
 # column selection mode:
 
+
 # ==================== General ====================
-(command [pallet | palette]): key(ctrl-shift-p)
-open: key(ctrl-p)
-new (window | instance): key(ctrl-shift-n)
-close (window | instance): key(ctrl-shift-w)
-[user] settings: key(ctrl-,)
+(command [pallet | palette]):
+    key(ctrl-shift-p)
+
+open:
+    key(ctrl-p)
+
+new (window | instance):
+    key(ctrl-shift-n)
+
+close (window | instance):
+    key(ctrl-shift-w)
+
+[user] settings:
+    key(ctrl-,)
+
 keyboard shortcuts:
     key(ctrl-k)
     key(ctrl-s)
