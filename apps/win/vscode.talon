@@ -248,6 +248,25 @@ forward:
 
 # ==================== Search and Replace ====================
 
+next find:
+    key(f3)
+
+[previous | preev] find:
+    key(shift-f3)
+
+select all matches:
+    key(alt-enter)
+
+toggle case-sensitive:
+    key(alt-c)
+
+toggle regular expression:
+    key(alt-r)
+
+toggle whole word:
+    key(alt-w)
+
+
 # ==================== Multi-Cursor & Selection ====================
 
 # ==================== Rich Languages Editing ====================
