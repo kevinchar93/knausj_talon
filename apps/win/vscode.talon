@@ -4,8 +4,42 @@ app: Code.exe
 
 -
 
-# edit menu
-save: key(ctrl-s)
+# =========== File Menu ===========
+new file:
+    key(ctrl-n)
+
+new window:
+    key(ctrl-shift-n)
+
+open file:
+    key(ctrl-o)
+
+open folder:
+    key(ctrl-k)
+    key(ctrl-o)
+
+save:
+    key(ctrl-s)
+
+save as:
+    key(ctrl-shift-s)
+
+save all:
+    key(ctrl-k)
+    key(s)
+
+# close editor:
+
+close folder: 
+    key(ctrl-k)
+    key(f)
+
+close workspace:
+    key(ctrl-k)
+    key(f)
+
+# close window:
+
 
 search: key(ctrl-f)
 replace: key(ctrl-h)
