@@ -12,6 +12,7 @@ extension_lang_map = {
 "css"  : "css",
 "ts"   : "typescript",
 "sh"   : "bash",
+"md"   : "markdown",
 "cs"   : "csharp",
 "cpp"  : "cplusplus",
 "h"    : "cplusplus",

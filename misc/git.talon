@@ -16,6 +16,7 @@ app: git-cmd.exe
 app: WindowsTerminal.exe
 -
 git clean: "git clean "
+git submodule: "git submodule "
 get clean all: "git clean -fdx"
 git add patch: "git add . -p\n"
 git add: "git add "
@@ -29,9 +30,13 @@ git clone clipboard:
   edit.paste()
   key(enter)
 git commit message <phrase>: "git commit -m '{phrase}'"
-git commit: "git commit\n"
-git diff (colour|color) words: "git diff --color-words "
-git diff: "git diff "
+git commit: "git commit"
+git add modified: "git add -u \n"
+git [diff | difference] staged: "git diff --staged \n"
+git [diff | difference] (colour|color) words: "git diff --color-words "
+git [diff | difference]: "git diff "
+git [diff | difference] name only: "git diff --name-only "
+git [diff | difference] name only master: "git diff --name-only master"
 git fetch: "git fetch\n"
 git fetch <phrase>: "git fetch {phrase}"
 git in it: "git init\n"

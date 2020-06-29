@@ -14,6 +14,10 @@ app: conhost.exe
 app: cygwin-console-helper.exe
 -
 
+(docker | Dr ): "docker "
+(docker | Dr ) PS: "docker ps "
+(docker | Dr ) [<phrase>]: "docker {phrase} "
+
 remove: "rm "
 recursive remove: "rm -rf "
 (Yum | yom) install: "yum install "
@@ -36,6 +40,8 @@ secure shell: "ssh "
 secure copy: "scp "
 
 ((run | ron) list): "ls \n"
+
+Exit: "exit"
 
 kill all:
   key(ctrl-c)

@@ -1,17 +1,20 @@
+code.language: markdown
 
-new markdown rule: 
-    insert("((markdown | mark) ): \"\"")
-    key(left left left left left)
+-
 
-((markdown | mark) header one): "# "
-((markdown | mark) header to): "## "
-((markdown | mark) header three): "### "
-((markdown | mark) header for): "#### "
-((markdown | mark) header five): "##### "
-((markdown | mark) header six): "####### "
+header one: "# "
+header to: "## "
+header three: "### "
+header for: "#### "
+header five: "##### "
+header six: "####### "
 
-((markdown | mark) in-line code):
-    insert("__``__")
-    key(left left left)
+insert code:
+    "``"
+    key(left)
 
-((markdown | mark) list): "* "
+insert bold:
+    "____"
+    key(left left)
+
+list: "* "
