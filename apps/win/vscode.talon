@@ -301,13 +301,51 @@ change all occurrences: key(ctrl-f2)
 complete: key(ctrl-space)
 spacey: " = "
 sidebar: key(ctrl-b)
-# ==================== MetaJump ====================
 
-character: key(alt-/)
-[jump | john]: key(ctrl-shift-alt-j)
-line: key(ctrl-shift-alt-l)
-select: key(alt-shift-/)
-add cursor: key(alt-ctrl-/)
+
+# ==================== MetaJump ====================
+character:
+    key(alt-/)
+
+[jump | john]:
+    key(ctrl-shift-alt-j)
+
+line:
+    key(ctrl-shift-alt-l)
+
+select:
+    key(alt-shift-/)
+
+add cursor:
+    key(alt-ctrl-/)
+
+centre:
+    key(alt-m)
+
+top:
+    key(alt-t)
+
+bottom:
+    key(alt-b)
+
+    
+# bookmarks
+bookmark:
+    key(alt-#)
+
+book list:
+    key(alt-\)
+
+book next: 
+    key(alt-\)
+    insert("n")
+    key(enter)
+
+(book [prove |  please | pre- | preev]):
+    key(alt-\)
+    insert("p")
+    key(enter)
+
 
 # ==================== ToDo ====================
 make task: key(alt-enter)
@@ -322,11 +360,6 @@ terminal show: key(ctrl-')
 terminal create: key(ctrl-shift-`)
 terminal home : key(ctrl-home)
 terminal end : key(ctrl-end)
-
-# bookmarks
-bookmark: key(ctrl-alt-k)
-book next: key(ctrl-alt-l)
-(book [prove |  please | pre- | preev]): key(ctrl-alt-j)
 
 open recent:
     key(ctrl-r)
