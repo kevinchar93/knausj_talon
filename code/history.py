@@ -1,5 +1,6 @@
 from talon import imgui, Module, speech_system, actions
 
+command_history_file_location="C:\\Users\\kecharle\\AppData\\Roaming\\talon\\command-history.log"
 hist_len = 10
 is_showing = False
 history = []
@@ -12,6 +13,8 @@ def on_phrase(j):
     #print(str(actions.dictate.parse_words(j)))
     val = parse_phrase(j['phrase'])
     if val != "":
+        with open(command_history_file_location, "a") as f:
+            print(val, file=f)
         history.append(val)
         history = history[-hist_len:]
 

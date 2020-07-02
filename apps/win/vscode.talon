@@ -171,10 +171,10 @@ outdent [line]:
 # scroll line up
 # scroll line down
 
-( booze | nick | cruise up):
+(booze | nick | cruise up):
     key(alt-pageup)
 
-( Drew's | (knack | nack) | cruise down):
+(Drew's | (knack | nack) | cruise down):
     key(alt-pagedown)
 
 [fold region | fold ]:
@@ -304,17 +304,23 @@ sidebar: key(ctrl-b)
 
 
 # ==================== MetaJump ====================
-character:
+skip:
     key(alt-/)
 
-[jump | john]:
-    key(ctrl-shift-alt-j)
+skip <user.key>:
+    key(alt-/)
+    key(key)
 
 line:
-    key(ctrl-shift-alt-l)
+    key(alt-/)
+    key(enter)
 
 select:
     key(alt-shift-/)
+
+select <user.key>:
+    key(alt-shift-/)
+    key(key)
 
 add cursor:
     key(alt-ctrl-/)

@@ -14,6 +14,9 @@ app: conhost.exe
 app: cygwin-console-helper.exe
 -
 
+empty proxy: "http_proxy= https_proxy= "
+[Chuckle | Chaco]: "choco "
+Pico: "peco "
 (docker | Dr ): "docker "
 (docker | Dr ) PS: "docker ps "
 (docker | Dr ) [<phrase>]: "docker {phrase} "

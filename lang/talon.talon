@@ -1,16 +1,23 @@
 code.language: talon
 -
+
 insert: 
 	insert('insert("")')
+	skip()
 	edit.left()
 	edit.left()
-	
+
+type skip:
+	insert('skip()')
+
 key:
 	insert('key()')
-	edit.left()
+	skip()
+	key(left)
 
 action:
 	insert("action()")
+	skip()
 	edit.left()
 
 os win:
