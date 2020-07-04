@@ -42,24 +42,24 @@ tools menu     : key(alt-t)
 
 
 # =========== Node , Editing , and Navigation Commands
-Sibling
-Child
-sibling before
+Sibling: key(enter)
+Child: key(insert)
+sibling before: key(shift-enter)
 
-Edit
-edit long
-join
-move up
-move down
-move right
-move left
+Edit: key(home)
+edit long: key(alt-enter)
+join: key(ctrl-j)
+move up: key(ctrl-up)
+move down: key(ctrl-down)
+move right: key(ctrl-right)
+move left: key(ctrl-left)
 
-(route | centre)
-follow link
-zoom in
-zoom out
-fold
-fold children
-fold all
-unfold all
+(route | centre): key(escape)
+follow link: key(ctrl-enter)
+zoom in: key(alt-up)
+zoom out: key(alt-down)
+fold: key(space)
+fold children: key(ctrl-space)
+fold all: key(alt-home)
+unfold all: key(alt-end)
 
