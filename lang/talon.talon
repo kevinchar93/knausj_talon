@@ -20,7 +20,7 @@ action:
 	skip()
 	edit.left()
 
-os win:
+OS Windows:
 	insert("os: windows")
 	
 os mac:

@@ -9,6 +9,7 @@ flop: key(ctrl-shift-tab)
 google search: key(ctrl-k)
 search: key(ctrl-f)
 address bar: key(alt-d)
+save to pocket: key(alt-shift-p)
 
 #action(browser.address):
 

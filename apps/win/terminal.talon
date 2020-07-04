@@ -14,6 +14,7 @@ app: conhost.exe
 app: cygwin-console-helper.exe
 -
 
+Touch: "touch "
 empty proxy: "http_proxy= https_proxy= "
 [Chuckle | Chaco]: "choco "
 Pico: "peco "
