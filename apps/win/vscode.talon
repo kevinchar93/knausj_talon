@@ -304,10 +304,7 @@ fullscreen:
 explorer:
     key(ctrl-shift-e)
 
-show debug:
-    key(ctrl-shift-d)
-
-show extensions:
+open extensions:
     key(ctrl-shift-x)
 
 source control:
