@@ -275,9 +275,14 @@ toggle whole word:
 close editor: key(ctrl-w)
 # file management
 # display
-show explorer: key(ctrl-shift-e)
+show explorer:
+    key(ctrl-shift-e)
 
+(Side one | west):
+    key(ctrl-1)
 
+(Side two | east):
+    key(ctrl-2)
 
 flip:
     key(ctrl-k)
@@ -290,6 +295,33 @@ flop:
 # diff tool
 (next change | goneck): key(alt-f5)
 (previous change | gopreev): key(alt-shift-f5)
+
+
+# ==================== Display ====================
+fullscreen:
+    key(f11)
+
+explorer:
+    key(ctrl-shift-e)
+
+show debug:
+    key(ctrl-shift-d)
+
+show extensions:
+    key(ctrl-shift-x)
+
+source control:
+    key(ctrl-shift-g)
+
+search details:
+    key(ctrl-shift-j)
+
+markdown preview:
+    key(ctrl-k)
+    key(v)
+
+(Zenn | zen) mode:
+    key(ctrl-alt-z)
 
 
 # ========= Context Menu =========== 
