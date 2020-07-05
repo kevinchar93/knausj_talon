@@ -10,7 +10,7 @@ google search: key(ctrl-k)
 search: key(ctrl-f)
 address bar: key(alt-d)
 save to pocket: key(alt-shift-p)
-
+(Any do | first tab): key(ctrl-1)
 #action(browser.address):
 
 action(browser.bookmark):
