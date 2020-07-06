@@ -4,13 +4,22 @@ app: chrome.exe
 -
 tag(): browser
 	
-flip: key(ctrl-tab)
-flop: key(ctrl-shift-tab)
-google search: key(ctrl-k)
-search: key(ctrl-f)
-address bar: key(alt-d)
-save to pocket: key(alt-shift-p)
-(Any do | first tab): key(ctrl-1)
+flip              : key(ctrl-tab)
+flop              : key(ctrl-shift-tab)
+google search     : key(ctrl-k)
+search            : key(ctrl-f)
+address bar       : key(alt-d)
+save to pocket    : key(alt-shift-p)
+(Any do | tab one): key(ctrl-1)
+tab to            : key(ctrl-2)
+tab three         : key(ctrl-3)
+tab for           : key(ctrl-4)
+tab five          : key(ctrl-5)
+tab six           : key(ctrl-6)
+tab seven         : key(ctrl-7)
+tab eight         : key(ctrl-8)
+last tab          : key(ctrl-9)
+
 #action(browser.address):
 
 action(browser.bookmark):
