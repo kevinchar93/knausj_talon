@@ -19,6 +19,7 @@ tab six           : key(ctrl-6)
 tab seven         : key(ctrl-7)
 tab eight         : key(ctrl-8)
 last tab          : key(ctrl-9)
+pin [tab]         : key(ctrl-shift-x)
 
 #action(browser.address):
 
