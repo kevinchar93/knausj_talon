@@ -5,96 +5,47 @@ app: Code.exe
 -
 
 # =========== File Menu ===========
-new file:
-    key(ctrl-n)
-
-new window:
-    key(ctrl-shift-n)
-
-open file:
-    key(ctrl-o)
-
-open folder:
-    key(ctrl-k)
-    key(ctrl-o)
-
-save:
-    key(ctrl-s)
-
-save as:
-    key(ctrl-shift-s)
-
-save all:
-    key(ctrl-k)
-    key(s)
-
+new file       : key(ctrl-n)
+new window     : key(alt-f w enter)
+open file      : key(ctrl-o)
+open folder    : key(ctrl-k ctrl-o)
+save           : key(ctrl-s)
+save as        : key(ctrl-shift-s)
+save all       : key(ctrl-k s)
+close folder   : key(ctrl-k f)
+close workspace: key(ctrl-k f)
 # close editor:
-
-close folder: 
-    key(ctrl-k)
-    key(f)
-
-close workspace:
-    key(ctrl-k)
-    key(f)
-
 # close window:
 
-
 # =========== Edit Menu ===========
-
+replace files: key(ctrl-shift-h)
+search files : key(ctrl-shift-f)
+redo         : key(ctrl-z)
+replace      : key(ctrl-h)
+search       : key(ctrl-f)
 # undo: (undo)
-
-redo:
-    key(ctrl-z)
-
 # cut: (cut)
 # copy: (stoush)
 # paste: (spark)
 # find: (search)
-
-search:
-    key(ctrl-f)
-
-replace:
-    key(ctrl-h)
-
 # find in files: (search files)
-
-search files:
-    key(ctrl-shift-f)
-
-replace files:
-    key(ctrl-shift-h)
-
 # toggle line comment: (comment)
 # toggle block comment (block comment)
 # emmett expand abbreviation (tab)
 
-
 # =========== Selection Menu ===========
-select all:
-    key(ctrl-a)
-
-expand selection:
-    key(shift-alt-right)
-
-shrink selection:
-    key(shift-alt-left)
-
+select all                        : key(ctrl-a)
+expand selection                  : key(shift-alt-right)
+shrink selection                  : key(shift-alt-left)
+([cursor | curse] [below | down ]): key(alt-ctrl-down)
+([cursor | curse] [above | up ])  : key(alt-ctrl-up)
 # copy line up:
 # copy line down:
 # move line up:
 # move line down:
 # duplicate selection:
-
-
 # add cursor above
-([cursor | curse] [below | down ]): key(alt-ctrl-down)
-
 # add cursor below
-([cursor | curse] [above | up ]): key(alt-ctrl-up)
-
 # add cursors to line ends:
 # add next occurrence:
 # add previous occurrence:
@@ -102,319 +53,137 @@ shrink selection:
 # switch to control plus click for multi-cursor:
 # column selection mode:
 
-
 # ==================== General ====================
-(command [pallet | palette]):
-    key(ctrl-shift-p)
-
-open:
-    key(ctrl-p)
-
-new (window | instance):
-    key(ctrl-shift-n)
-
-close (window | instance):
-    key(ctrl-shift-w)
-
-[user] settings:
-    key(ctrl-,)
-
-keyboard shortcuts:
-    key(ctrl-k)
-    key(ctrl-s)
-
+(command [pallet | palette]): key(ctrl-shift-p)
+open                        : key(ctrl-p)
+new (window | instance)     : key(ctrl-shift-n)
+close (window | instance)   : key(ctrl-shift-w)
+[user] settings             : key(ctrl-,)
+keyboard shortcuts          : key(ctrl-k ctrl-s)
+keyboard shortcuts          : key(ctrl-k ctrl-s)
 
 # ==================== Basic Editing ====================
-
-# cut line:
-# copy line:
-
-move [line] up:
-    key(alt-up)
-
-move [line] down:
-    key(alt-down)
-
-copy [line] up:
-    key(alt-up)
-
-copy [line] down:
-    key(alt-down)
-
-delete line:
-    key(shift-alt-k)
-
-insert line below:
-    key(ctrl-enter)
-
-insert line above:
-    key(ctrl-shift-enter)
-
-jump to matching [bracket]:
-    key(ctrl-shift-\)
-
-indent [line]:
-    key(ctrl-])
-
-outdent [line]:
-    key(ctrl-[)
-
-# go to beginning of line
-# go to end of line
-
-(file [beginning | begin] | Beginning of file):
-    key(ctrl-home)
-
-(file end | end of file):
-    key(ctrl-end)
-
-# scroll line up
-# scroll line down
-
-(booze | nick | cruise up):
-    key(alt-pageup)
-
-(Drew's | (knack | nack) | cruise down):
-    key(alt-pagedown)
-
-[fold region | fold ]:
-    key(ctrl-shift-[)
-
-[unfold region | expand ]:
-    key(ctrl-shift-])
-
-fold all subregions:
-    key(ctrl-k)
-    key(ctrl-[)
-
-unfold all subregions:
-    key(ctrl-k)
-    key(ctrl-])
-
-fold all regions:
-    key(ctrl-k)
-    key(ctrl-0)
-
-unfold all regions:
-    key(ctrl-k)
-    key(ctrl-j)
-
-# add line comment
-# remove line comment
-
-comment:
-    key(ctrl-/)
-
-block comment:
-    key(shift-alt-a)
-
-word wrap:
-    key(alt-z)
+move [line] up                         : key(alt-up)
+move [line] down                       : key(alt-down)
+copy [line] up                         : key(alt-up)
+copy [line] down                       : key(alt-down)
+delete line                            : key(shift-alt-k)
+insert line below                      : key(ctrl-enter)
+insert line above                      : key(ctrl-shift-enter)
+jump to matching [bracket]             : key(ctrl-shift-\)
+indent [line]                          : key(ctrl-])
+outdent [line]                         : key(ctrl-[)
+(file [beginning | begin])             : key(ctrl-home)
+(file end | end of file)               : key(ctrl-end)
+(booze | nick | cruise up)             : key(alt-pageup)
+(Drew's | (knack | nack) | cruise down): key(alt-pagedown)
+[fold region | fold ]                  : key(ctrl-shift-[)
+[unfold region | expand ]              : key(ctrl-shift-])
+fold all subregions                    : key(ctrl-k ctrl-[)
+unfold all subregions                  : key(ctrl-k ctrl-])
+fold all regions                       : key(ctrl-k ctrl-0)
+unfold all regions                     : key(ctrl-k ctrl-j)
+comment                                : key(ctrl-/)
+block comment                          : key(shift-alt-a)
+word wrap                              : key(alt-z)
 
 # ==================== Navigation ====================
-
-# go to file
-
-[show] all symbols:
-    key(ctrl-t)
-
-go-to line:
-    key(ctrl-g)
-
-[go to] symbol:
-    key(ctrl-shift-o)
-
-[show] problems panel:
-    key(ctrl-shift-m)
-
-(next error | next warning):
-    key(f8)
-
-((previous | last) error | (previous | last) warning):
-    key(shift-f8)
-
-(navigate editor group history | nav edit history):
-    key(ctrl-shift-tab)
-
-forward:
-    key(alt-right)
-
-(back | backwards):
-    key(alt-left)
-
-[move] focus:
-    key(ctrl-m)
-
+[show] all symbols         : key(ctrl-t)
+go-to line                 : key(ctrl-g)
+[go to] symbol             : key(ctrl-shift-o)
+[show] problems panel      : key(ctrl-shift-m)
+(next error | next warning): key(f8)
+(previous | last) error    : key(shift-f8)
+(previous | last) warning  : key(shift-f8)
+forward                    : key(alt-right)
+(back | backwards)         : key(alt-left)
+[move] focus               : key(ctrl-m)
 
 # ==================== Search and Replace ====================
-
-next find:
-    key(f3)
-
-[previous | preev] find:
-    key(shift-f3)
-
-select all matches:
-    key(alt-enter)
-
-toggle case-sensitive:
-    key(alt-c)
-
-toggle regular expression:
-    key(alt-r)
-
-toggle whole word:
-    key(alt-w)
-
+next find                : key(f3)
+[previous | preev] find  : key(shift-f3)
+select all matches       : key(alt-enter)
+toggle case-sensitive    : key(alt-c)
+toggle regular expression: key(alt-r)
+toggle whole word        : key(alt-w)
 
 # ==================== Multi-Cursor & Selection ====================
 
 # ==================== Rich Languages Editing ====================
 
 # ==================== Editor Management ====================
-close editor: key(ctrl-w)
-# file management
-# display
-show explorer:
-    key(ctrl-shift-e)
+close editor               : key(ctrl-w)
+show explorer              : key(ctrl-shift-e)
+(Side one | west)          : key(ctrl-1)
+(Side two | east)          : key(ctrl-2)
+flip                       : key(ctrl-k ctrl-pagedown)
+flop                       : key(ctrl-k ctrl-pageup)
 
-(Side one | west):
-    key(ctrl-1)
+# =========== File Management ===========
+# =========== Display ===========
 
-(Side two | east):
-    key(ctrl-2)
-
-flip:
-    key(ctrl-k)
-    key(ctrl-pagedown)
-flop:
-    key(ctrl-k)
-    key(ctrl-pageup)
-
- 
-# diff tool
-(next change | goneck): key(alt-f5)
+# ===========  Diff Tool ===========
+(next change | goneck)     : key(alt-f5)
 (previous change | gopreev): key(alt-shift-f5)
-
-
-# ==================== Display ====================
-fullscreen:
-    key(f11)
-
-explorer:
-    key(ctrl-shift-e)
-
-open extensions:
-    key(ctrl-shift-x)
-
-source control:
-    key(ctrl-shift-g)
-
-search details:
-    key(ctrl-shift-j)
-
-markdown preview:
-    key(ctrl-k)
-    key(v)
-
-(Zenn | zen) mode:
-    key(ctrl-alt-z)
-
-
-# ========= Context Menu =========== 
-rename symbol: key(f2)
-change all occurrences: key(ctrl-f2)
-[go to] definition: key(f12)
-[show] references: key(shift-f12)
-
-complete: key(ctrl-space)
-spacey: " = "
-sidebar: key(ctrl-b)
-
-
-# ==================== MetaJump ====================
-skip:
-    key(alt-/)
-
-skip <user.key>:
-    key(alt-/)
-    key(key)
-
-line:
-    key(alt-/)
-    key(enter)
-
-select:
-    key(alt-shift-/)
-
-select <user.key>:
-    key(alt-shift-/)
-    key(key)
-
-add cursor:
-    key(alt-ctrl-/)
-
-centre:
-    key(alt-m)
-
-top:
-    key(alt-t)
-
-bottom:
-    key(alt-b)
-
-    
-# bookmarks
-bookmark:
-    key(alt-#)
-
-book list:
-    key(alt-\)
-
-book next: 
-    key(alt-\)
-    insert("n")
-    key(enter)
-
-(book [prove |  please | pre- | preev]):
-    key(alt-\)
-    insert("p")
-    key(enter)
-
-
-# ==================== ToDo ====================
-make task: key(alt-enter)
-task [done | complete]: key(alt-d)
-task [start | started]: key(alt-s)
-task [cancel | cancelled]: key(alt-c)
-task archive: key(ctrl+shift+a)
-
-# debug
-# integrated terminal
-terminal show: key(ctrl-')
-terminal create: key(ctrl-shift-`)
-terminal home : key(ctrl-home)
-terminal end : key(ctrl-end)
-
-open recent:
-    key(ctrl-r)
-
-stage [selected]:
-    key(ctrl-k)
-    key(ctrl-alt-s)
-
-commit [staged]:
-    key(ctrl-k)
-    key(ctrl-alt-c)
-
+stage [selected]           : key(ctrl-k ctrl-alt-s)
+commit [staged]            : key(ctrl-k ctrl-alt-c)
 [open] changes:
     key(ctrl-shift-p)
     insert("Git: Open Changes")
     key(enter)
 
-keyboard shortcuts:
-    key(ctrl-k)
-    key(ctrl-s)
+# ==================== Display ====================
+fullscreen       : key(f11)
+explorer         : key(ctrl-shift-e)
+open extensions  : key(ctrl-shift-x)
+source control   : key(ctrl-shift-g)
+search details   : key(ctrl-shift-j)
+markdown preview : key(ctrl-k v)
+(Zenn | zen) mode: key(ctrl-alt-z)
+
+# =========== Alignment ===========
+align characters: key(alt-=)
+
+# ========= Context Menu =========== 
+rename symbol         : key(f2)
+change all occurrences: key(ctrl-f2)
+[go to] definition    : key(f12)
+[show] references     : key(shift-f12)
+complete              : key(ctrl-space)
+spacey                : " = "
+sidebar               : key(ctrl-b)
+
+# ==================== MetaJump ====================
+skip                                   : key(alt-/)
+skip <user.key>                        : key(alt-/ key)
+line                                   : key(alt-/ enter)
+select                                 : key(alt-shift-/)
+select <user.key>                      : key(alt-shift-/ key)
+add cursor                             : key(alt-ctrl-/)
+centre                                 : key(alt-m)
+top                                    : key(alt-t)
+bottom                                 : key(alt-b)
+bookmark                               : key(alt-#)
+book list                              : key(alt-\)
+book next                              : key(alt-\ n enter)
+(book [prove |  please | pre- | preev]): key(alt-\ p enter)
+
+# ==================== ToDo ====================
+make task                : key(alt-enter)
+task [done | complete]   : key(alt-d)
+task [start | started]   : key(alt-s)
+task [cancel | cancelled]: key(alt-c)
+task archive             : key(ctrl+shift+a)
+
+# =========== Debug ===========
+
+# =========== Integrated Terminal ===========
+terminal show            : key(ctrl-')
+terminal create          : key(ctrl-shift-`)
+terminal home            : key(ctrl-home)
+terminal end             : key(ctrl-end)
+open recent              : key(ctrl-r)
+
 
 # action(user.ide_refactor):
 #   key(ctrl-a)
