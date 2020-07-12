@@ -61,6 +61,7 @@ close (window | instance)   : key(ctrl-shift-w)
 [user] settings             : key(ctrl-,)
 keyboard shortcuts          : key(ctrl-k ctrl-s)
 keyboard shortcuts          : key(ctrl-k ctrl-s)
+copy path                   : key(ctrl-k ctrl-shift-c)
 
 # ==================== Basic Editing ====================
 move [line] up                         : key(alt-up)
@@ -114,10 +115,11 @@ toggle whole word        : key(alt-w)
 # ==================== Editor Management ====================
 close editor               : key(ctrl-w)
 show explorer              : key(ctrl-shift-e)
-(Side one | west)          : key(ctrl-1)
-(Side two | east)          : key(ctrl-2)
+(side one | west)          : key(ctrl-1)
+(side two | east)          : key(ctrl-2)
 flip                       : key(ctrl-k ctrl-pagedown)
 flop                       : key(ctrl-k ctrl-pageup)
+keep open                  : key(ctrl-k enter)
 
 # =========== File Management ===========
 # =========== Display ===========
@@ -126,6 +128,7 @@ flop                       : key(ctrl-k ctrl-pageup)
 (next change | goneck)     : key(alt-f5)
 (previous change | gopreev): key(alt-shift-f5)
 stage [selected]           : key(ctrl-k ctrl-alt-s)
+revert [selected]          : key(ctrl-k ctrl-r)
 commit [staged]            : key(ctrl-k ctrl-alt-c)
 [open] changes:
     key(ctrl-shift-p)
@@ -136,7 +139,7 @@ commit [staged]            : key(ctrl-k ctrl-alt-c)
 fullscreen       : key(f11)
 explorer         : key(ctrl-shift-e)
 open extensions  : key(ctrl-shift-x)
-source control   : key(ctrl-shift-g)
+source control   : key(ctrl-shift-g g)
 search details   : key(ctrl-shift-j)
 markdown preview : key(ctrl-k v)
 (Zenn | zen) mode: key(ctrl-alt-z)

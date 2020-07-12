@@ -9,7 +9,8 @@ type up: "up"
 type down: "down"
 type left: "left"
 type right: "right"
-
+type dot: "dot "
+type enter: "enter"
 
 
 new terminal run rule: 

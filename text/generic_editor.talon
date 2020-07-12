@@ -48,6 +48,8 @@ go way up:
 	edit.page_up()
 
 # selecting
+((select | sell) all): key(ctrl-a)
+
 ((select | sell) line): 
 	edit.line_start()
 	edit.extend_line_end()
@@ -93,27 +95,27 @@ indent more:
 clear line: 
 	edit.delete_line()
     
-clear left: 
-	edit.extend_line_start()
-	edit.delete()
+# clear left: 
+# 	edit.extend_line_start()
+# 	edit.delete()
 	
-clear right: 
-	edit.extend_line_end()
-	edit.delete()
+# clear right: 
+# 	edit.extend_line_end()
+# 	edit.delete()
 	
-clear up: 
-	edit.extend_line_up()
-	edit.delete()
+# clear up: 
+# 	edit.extend_line_up()
+# 	edit.delete()
 
-clear down: 
-	edit.extend_line_down()
-	edit.delete()
+# clear down: 
+# 	edit.extend_line_down()
+# 	edit.delete()
 
-(clear word left | splat left): 
+(clear word left | splat left | splat): 
 	edit.extend_word_left()
 	edit.delete()
 	
-(clear word right | splat right): 
+(clear word right | splat right | 's plight' | Speiighht): 
 	edit.extend_word_right()
 	edit.delete()
 

@@ -14,6 +14,8 @@ app: conhost.exe
 app: conemu-cyg-64.exe
 app: git-cmd.exe
 app: WindowsTerminal.exe
+app: /Console Emulator/
+
 -
 git clean: "git clean "
 git submodule: "git submodule "
@@ -29,7 +31,10 @@ git clone clipboard:
   insert("git clone ")
   edit.paste()
   key(enter)
-git commit message <phrase>: "git commit -m '{phrase}'"
+git commit message: 
+  "git commit -m ''"
+  skip()
+  key(left)
 git commit: "git commit"
 git add modified: "git add -u \n"
 git [diff | difference] staged: "git diff --staged \n"

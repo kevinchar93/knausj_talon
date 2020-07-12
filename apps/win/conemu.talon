@@ -1,10 +1,8 @@
 os: windows
 app: ConEmu64.exe
+app: /Console Emulator/
 
 -
-settings
-menu
-fullscreen
 
 close [tab | terminal]: key(ctrl-shift-q)
 flip: key(ctrl-tab)

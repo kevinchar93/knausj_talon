@@ -21,6 +21,27 @@ tab eight         : key(ctrl-8)
 last tab          : key(ctrl-9)
 pin [tab]         : key(ctrl-shift-x)
 
+to do             : key(ctrl-1)
+JIRA              : key(ctrl-2)
+merge requests    : key(ctrl-3)
+Jenkins           : key(ctrl-4)
+confluence        : key(ctrl-5)
+
+Use web client:
+  key(escape)
+  skip()
+  skip()
+  key(f)
+  skip()
+  skip()
+  key(s)
+  skip()
+  skip()
+  key(f)
+  skip()
+  skip()
+  key(s)
+
 #action(browser.address):
 
 action(browser.bookmark):

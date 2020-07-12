@@ -3,6 +3,7 @@ app: Windows Command Processor
 app: cmd.exe
 app: ssh.exe
 app: /git-cmd/
+app: /^sh/
 app: ConEmuC64.exe
 app: ConEmu64.exe
 app: conhost.exe
@@ -11,7 +12,10 @@ app: git-cmd.exe
 app: WindowsTerminal.exe
 app: mintty.exe
 app: conhost.exe
-app: cygwin-console-helper.exe
+app: cygwin-console-helper.
+app: sh.exe
+app: bash.exe
+app: /Console Emulator/
 -
 
 Touch: "touch "
@@ -21,7 +25,8 @@ Pico: "peco "
 (docker | Dr ): "docker "
 (docker | Dr ) PS: "docker ps "
 (docker | Dr ) [<phrase>]: "docker {phrase} "
-
+yankee: key(ctrl-y)
+kill line: key(home ctrl-k)
 remove: "rm "
 recursive remove: "rm -rf "
 (Yum | yom) install: "yum install "
