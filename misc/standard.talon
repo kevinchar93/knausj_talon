@@ -1,30 +1,68 @@
-slap:
-	edit.line_end()
-	key(enter)
-cd: "cd "
-cd up: "cd .. \n"
-grep: "grep "
-elle less: "ls "
-run L S: "ls\n"
-run list: "ls\n"
-(SSH | S S H | S H): "ssh "
-diff: "diff "
-docker file: "Dockerfile"
-change mode: "chmod "
-change owner: "chown "
-docker: "docker "
-log mistake: ""
-(to do-ist | do-ist | do list | dualist): "todoist"
-Any do: "any do"
-run vim: "vim "
-run make: "make\n"
-run clean: "make clean\n"
-make (durr | directory | dear): "mkdir "
-(jay son | jason ): "json"
-(http | htp): "http"
-tls: "tls"
-M D five: "md5"
-(regex | rejex): "regex"
+cd                      : "cd "
+cd up                   : "cd .. \n"
+grep                    : "grep "
+elle less               : "ls "
+run L S                 : "ls\n"
+run list                : "ls\n"
+(SSH | S S H | S H)     : "ssh "
+diff                    : "diff "
+docker file             : "Dockerfile"
+change mode             : "chmod "
+change owner            : "chown "
+docker                  : "docker "
+log mistake             : ""
+Any do                  : "any do"
+run vim                 : "vim "
+run make                : "make\n"
+run clean               : "make clean\n"
+make directory          : "mkdir "
+(jay son | jason )      : "json"
+(http | htp)            : "http"
+tls                     : "tls"
+M D five                : "md5"
+(regex | rejex)         : "regex"
+empty array             : "[]"
+comment see             : "// "
+word queue              : "queue"
+word eye                : "eye"
+word iter               : "iter"
+#word no                : "NULL"
+word cmd                : "cmd"
+word dup                : "dup"
+word printf             : "printf"
+word shell              : "shell"
+dunder in it            : "__init__"
+self taught             : "self."
+string U T F eight      : insert("'utf8'")
+state past              : "pass"
+zoom [in]               : edit.zoom_in()
+zoom out                : edit.zoom_out()
+(page | scroll) up      : key(pgup)
+(page | scroll) down    : key(pgdown)
+(copy | stoush | stoosh): edit.copy()
+(cut | kill)            : edit.cut()
+(paste | spark)         : edit.paste()
+paste match             : edit.paste_match_style()
+file save               : edit.save()
+spotlight               : key(super)
+undo that               : edit.undo()
+redo that               : edit.redo()
+volume up               : key(volup)
+volume down             : key(voldown)
+mute                    : key(mute)
+play next               : key(next)
+play previous           : key(prev)
+(play | pause)          : key(play_pause)  
+funny                   : "ha ha"
+spacey                  : " = "
+dashing                 : " - "
+#wipe: key(backspace)
+
+([Lynn | Lennox | Lynn ox | lie nux | lin nix]): "Linux"
+
+(pad | padding): 
+	insert("  ") 
+	key(left)
 args: 
 	insert("()")
 	key(left)
@@ -34,21 +72,6 @@ inside (index | array):
 block: 
 	insert("{}") 
 	key(left enter enter up tab)
-empty array: "[]"
-comment see: "// "
-word queue: "queue"
-word eye: "eye"
-word iter: "iter"
-#word no: "NULL"
-word cmd: "cmd"
-word dup: "dup"
-word streak: 
-	insert("streq()") 
-	key(left)
-word printf: "printf"
-word shell: "shell"
-dunder in it: "__init__"
-self taught: "self."
 (dickt in it | inside bracket | in bracket): 
 	insert("{}") 
 	key(left)
@@ -58,31 +81,10 @@ self taught: "self."
 list in it: 
 	insert("[]") 
 	key(left)
-string U T F eight: 
-	insert("'utf8'")
-state past: "pass"
-zoom [in]: edit.zoom_in()
-zoom out: edit.zoom_out()
-(page | scroll) up: key(pgup)
-(page | scroll) down: key(pgdown)
-(copy | stoush | stoosh): edit.copy()
-(cut | kill): edit.cut()
-(paste | spark): edit.paste()
-paste match: edit.paste_match_style()
-file save: edit.save()
-#menu help: key(F1)
-#spotlight: key(super)
-undo that: edit.undo()
-redo that: edit.redo()
-volume up: key(volup)
-volume down: key(voldown)
-mute: key(mute)
-play next: key(next)
-play previous: key(prev)
-(play | pause): key(play_pause)  
-wipe: key(backspace)
-(pad | padding): 
-	insert("  ") 
+word streak: 
+	insert("streq()") 
 	key(left)
-funny: "ha ha"
-([Lynn | Lennox | Lynn ox | lie nux | lin nix]): "Linux"
+(to do-ist | do-ist | do list | dualist): "todoist"
+slap:
+	edit.line_end()
+	key(enter)
