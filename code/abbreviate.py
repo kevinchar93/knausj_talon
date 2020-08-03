@@ -22,6 +22,7 @@ ctx.lists['user.abbreviation'] = {
     "attributes": "attrs",
     "authenticate": "auth",
     "authentication": "auth",
+    "auxiliary": "aux",
     "binary": "bin",
     "button": "btn",
     "class": "cls",

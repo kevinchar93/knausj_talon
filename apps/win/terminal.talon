@@ -17,7 +17,7 @@ app: sh.exe
 app: bash.exe
 app: /Console Emulator/
 -
-
+change age: "chage -d "
 Touch: "touch "
 empty proxy: "http_proxy= https_proxy= "
 [Chuckle | Chaco]: "choco "
@@ -50,8 +50,12 @@ secure copy: "scp "
 
 ((run | ron) list): "ls \n"
 
-Exit: "exit"
+[type] pseudo-: "sudo "
 
+Exit: "exit"
+checksum: "cksum "
+(pushed the| push D | pushed directory): "pushd "
+(property | pop D | pop directory): "popd "
 kill all:
   key(ctrl-c)
   insert("y")

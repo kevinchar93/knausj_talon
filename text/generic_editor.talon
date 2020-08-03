@@ -115,7 +115,7 @@ clear line:
 	edit.extend_word_left()
 	edit.delete()
 	
-(clear word right | splat right | 's plight' | Speiighht): 
+(clear word right | splat right | spliff):
 	edit.extend_word_right()
 	edit.delete()
 

@@ -67,3 +67,6 @@ mark channel read: key(esc)
     # Miscellaneous
 (slack | lack) shortcuts: key(ctrl-/)
 emote <phrase>: "{phrase}"
+send: key(ctrl-enter)
+insert code: key(ctrl-shift-c)
+insert code block: key(ctrl-alt-shift-c)

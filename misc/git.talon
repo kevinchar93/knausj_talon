@@ -35,6 +35,7 @@ git commit message:
   "git commit -m ''"
   skip()
   key(left)
+git submodule update: "git submodule update --init --recursive"
 git commit: "git commit"
 git add modified: "git add -u \n"
 git [diff | difference] staged: "git diff --staged \n"

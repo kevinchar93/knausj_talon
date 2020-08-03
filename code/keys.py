@@ -98,7 +98,7 @@ ctx.lists['self.symbol'] = {
     'R brace': '}', 'right brace': '}',
     'angle': '<', 'left angle': '<', 'less than': '<',
     'rangle': '>', 'R angle': '>', 'right angle': '>', 'greater than': '>',
-    'star': '*', 'asterisk': '*',
+    'starling': '*', 'asterisk': '*',
     'pound': '#', 'hash': '#', 'hash sign': '#', 'number sign': '#',
     'percent': '%', 'percent sign': '%',
     'caret': '^',
