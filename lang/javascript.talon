@@ -2,6 +2,7 @@ code.language: javascript
 -
 # keywords
 asynchronous: "async "
+arrow: " => "
 await: "await "
 function: "function "
 let: "let " 
@@ -12,7 +13,5 @@ export: "export "
 class: "class "
 return: "return;"
 else: "else "
-console log:
-    "console.log();"
-    key(left)
-    key(left)
+Log: "console.log("
+Directory: "console.dir("

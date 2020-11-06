@@ -28,9 +28,15 @@ Pico: "peco "
 yankee: key(ctrl-y)
 kill line: key(home ctrl-k)
 remove: "rm "
+force remove: "rm -f "
+copy: "cp "
+move: "mv "
 recursive remove: "rm -rf "
 (Yum | yom) install: "yum install "
+(Yum | yom) groupinstall: "yum groupinstall "
 (Yum | yom) remove: "yum remove "
+(Yum | yom) search: "yum search "
+
 clean terminal:key(ctrl-l)
 find here: "find . -name "
 find in directory:
@@ -51,7 +57,37 @@ secure copy: "scp "
 ((run | ron) list): "ls \n"
 
 [type] pseudo-: "sudo "
+Cat: "cat "
+[hill | kill] program:
+  key(ctrl-c)
+  key(ctrl-c)
+  key(ctrl-c)
+  key(ctrl-c)
+  key(ctrl-c)
+  key(ctrl-c)
+  key(ctrl-c)
 
+# (Fragrant|vagrant): "vagrant "
+(Fragrant|vagrant) : "vagrant "
+net cat: "nc "
+Ping: "ping "
+(N map | In map | en map): "nmap "
+firewall command: "firewall-cmd "
+interrupt: key(ctrl-c)
+[ta | tar]: "tar "
+jobs: "jobs "
+system control: "systemctl "
+system control status: "systemctl status "
+NPM: "npm "
+NPM install: "npm install "
+node: "node "
+List: "ls "
+grable: "gradle"
+[Carol|curl|carol]:  "curl "
+foreground: "fg "
+background: "bg "
+kill: "kill "
+export: "export "  
 Exit: "exit"
 checksum: "cksum "
 (pushed the| push D | pushed directory): "pushd "

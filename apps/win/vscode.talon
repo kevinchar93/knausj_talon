@@ -62,6 +62,12 @@ close (window | instance)   : key(ctrl-shift-w)
 keyboard shortcuts          : key(ctrl-k ctrl-s)
 keyboard shortcuts          : key(ctrl-k ctrl-s)
 copy path                   : key(ctrl-k ctrl-shift-c)
+open link:
+    key(ctrl-shift-p)
+    skip()
+    insert("Open Link")
+    skip()
+    key(enter)
 
 # ==================== Basic Editing ====================
 move [line] up                         : key(alt-up)
@@ -87,6 +93,10 @@ unfold all regions                     : key(ctrl-k ctrl-j)
 comment                                : key(ctrl-/)
 block comment                          : key(shift-alt-a)
 word wrap                              : key(alt-z)
+tag:
+    key(ctrl-/)
+    insert("OSGD-TODO: ")
+
 
 # ==================== Navigation ====================
 [show] all symbols         : key(ctrl-t)
@@ -114,6 +124,7 @@ toggle whole word        : key(alt-w)
 
 # ==================== Editor Management ====================
 close editor               : key(ctrl-w)
+close all editors          : key(ctrl-k ctrl-w)
 show explorer              : key(ctrl-shift-e)
 (side one | west)          : key(ctrl-1)
 (side two | east)          : key(ctrl-2)
@@ -153,7 +164,6 @@ change all occurrences: key(ctrl-f2)
 [go to] definition    : key(f12)
 [show] references     : key(shift-f12)
 complete              : key(ctrl-space)
-spacey                : " = "
 sidebar               : key(ctrl-b)
 
 # ==================== MetaJump ====================
@@ -166,10 +176,13 @@ add cursor                             : key(alt-ctrl-/)
 centre                                 : key(alt-m)
 top                                    : key(alt-t)
 bottom                                 : key(alt-b)
-bookmark                               : key(alt-#)
+
+# ==================== Bookmarks ===============================================
+bookmark                               : key(alt-ctrl-k)
 book list                              : key(alt-\)
-book next                              : key(alt-\ n enter)
-(book [prove |  please | pre- | preev]): key(alt-\ p enter)
+book list all                          : key(alt-#)
+book next                              : key(alt-ctrl-l)
+(book [prove |  please | pre- | preev]): key(alt-ctrl-j)
 
 # ==================== ToDo ====================
 make task                : key(alt-enter)
@@ -181,11 +194,12 @@ task archive             : key(ctrl+shift+a)
 # =========== Debug ===========
 
 # =========== Integrated Terminal ===========
-terminal show            : key(ctrl-')
+terminal show            : key(ctrl-#)
+(terminal focus | south) : key(ctrl-shift-alt-t)
 terminal create          : key(ctrl-shift-`)
 terminal home            : key(ctrl-home)
 terminal end             : key(ctrl-end)
-open recent              : key(ctrl-r)
+[open] recent            : key(ctrl-r)
 
 
 # action(user.ide_refactor):
