@@ -25,7 +25,7 @@ empty array             : "[]"
 comment see             : "// "
 word queue              : "queue"
 word eye                : "eye"
-word iter               : "iter"
+word iter               : "iter"1
 #word no                : "NULL"
 word cmd                : "cmd"
 word dup                : "dup"

@@ -1,8 +1,8 @@
 find it:
-	edit.find()
+    edit.find()
 
 next one:
-	edit.find_next()
+    edit.find_next()
 
 (go word left | stone): 
 	edit.word_left()
@@ -28,18 +28,24 @@ next one:
 (go line end | push): 
 	edit.line_end()
 
-go way left: 
-	edit.line_start()
-	edit.line_start()
-	
-go way right: 
-	edit.line_end()
+go line start:
+    edit.line_start()
 
-go way down: 
-	edit.file_end()
-	
-go way up: 
-	edit.file_start()
+go line end:
+    edit.line_end()
+
+go way left:
+    edit.line_start()
+    edit.line_start()
+
+go way right:
+    edit.line_end()
+
+go way down:
+    edit.file_end()
+
+go way up:
+    edit.file_start()
 
 [go] page down:
 	edit.page_down()
@@ -89,7 +95,7 @@ indent more:
 	edit.indent_more()
 
 (indent less | out dent):
-	edit.indent_less()
+    edit.indent_less()
 
 # deleting
 clear line: 

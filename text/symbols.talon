@@ -1,7 +1,4 @@
 question [mark]: "?"
-tilde: "~"
-(bang | exclamation point): "!"
-dollar [sign]: "$"
 (downscore | underscore): "_"
 (colon | dekkle): ":"
 (paren | left paren | prekiss): "("
@@ -28,47 +25,51 @@ ellipses: "..."
 plus: "+"
 arrow: "->"
 dub arrow: "=>"
-op dub: " => "
-(op | pad) colon: " : "
-indirect: "&"
-dereference: "*"
 new line: "\\n"
 carriage return: "\\r"
 line feed: "\\r\\n"
-(op equals | assign): " = "
-op (minus | subtract | sub): " - "
-op (plus | add): " + "
-op (times | multiply): " * "
-op divide: " / "
-op mod: " % "
-[op] (minus | subtract | sub) equals: " -= "
-[op] (plus | add) equals: " += "
-[op] (times | multiply) equals: " *= "
-[op] divide equals: " /= "
-[op] mod equals: " %= "
-(op | is) greater [than]: " > "
-(op | is) less [than]: " < "
-(op | is) equal: " == "
-(op | is) not equal: " != "
-(op | is) greater [than] or equal: " >= "
-(op | is) less [than] or equal: " <= "
-(op (power | exponent) | to the power [of]): " ** "
-(op | logical) and: " && "
-op or: " || "
-[op] (logical | bitwise) and: " & "
-[op] bitwise or: " | "
-[op] logical or: " || "
-(op | logical | bitwise) (ex | exclusive) or: " ^ "
-(op | logical | bitwise) (left shift | shift left): " << "
-(op | logical | bitwise) (right shift | shift right): " >> "
-(op | logical | bitwise) and equals: " &= "
-(op | logical | bitwise) or equals: " |= "
-(op | logical | bitwise) (ex | exclusive) or equals: " ^= "
-(op | logical | bitwise) (left shift | shift left) equals: " <<= "
-(op | logical | bitwise) (right shift | shift right) equals: " >>= "
 empty dubstring:
     '""'
     key(left)
-empty string: 
+empty escaped (dubstring|dub quotes):
+    '\\"\\"'
+    key(left)
+    key(left)
+empty string:
     "''"
     key(left)
+empty escaped string:
+    "\\'\\'"
+    key(left)
+    key(left)
+(inside parens | args):
+	insert("()")
+	key(left)
+inside (squares | list): 
+	insert("[]") 
+	key(left)
+inside (bracket | braces): 
+	insert("{}") 
+	key(left)
+inside percent: 
+	insert("%%") 
+	key(left)
+inside quotes:
+	insert('""')
+	key(left)
+angle this: 
+    text = edit.selected_text()
+    user.paste("<{text}>")
+(bracket | brace) this: 
+    text = edit.selected_text()
+    user.paste("{{{text}}}")
+(parens | args) this: 
+    text = edit.selected_text()
+    user.paste("({text})")
+percent this: 
+    text = edit.selected_text()
+    user.paste("%{text}%")
+quote this:
+    text = edit.selected_text()
+    user.paste('"{text}"')
+

@@ -16,6 +16,8 @@ app: cygwin-console-helper.
 app: sh.exe
 app: bash.exe
 app: /Console Emulator/
+app: windows_terminal
+app: windows_command_processor
 -
 change age: "chage -d "
 Touch: "touch "
@@ -48,6 +50,13 @@ find in directory:
   key(left)
   key(left)
   key(left)
+
+# comment or remove tags for command sets you don't want
+tag(): user.file_manager
+tag(): user.git
+tag(): user.kubectl
+tag(): user.tabs
+tag(): terminal
 
 run last: key(up enter)
 
@@ -111,3 +120,4 @@ action(user.file_manager_open_parent):
     insert("cd ..")
     key(enter)
     user.file_manager_refresh_title()
+
