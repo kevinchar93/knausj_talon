@@ -1,6 +1,6 @@
 #provide both anchored and unachored commands via 'over'
 (say | speak | phrase) <user.text>$: 
-  result = user.formatted_text(text, "NOOP")
+  result = user.formatted_text(text, "ALL_LOWERCASE")
   insert(result)
 (say | speak | phrase) <user.text> over: 
   result = user.formatted_text(text, "NOOP")

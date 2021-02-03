@@ -19,6 +19,14 @@ git clone clipboard:
   insert("git clone ")
   edit.paste()
   key(enter)
+git visualise branch:
+  "gitk"
+  key(enter)
+
+git visualise all:
+  "gitk --all"
+  key(enter)
+
 git commit message: 
   "git commit -m ''"
   skip()

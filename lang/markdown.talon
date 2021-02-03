@@ -26,5 +26,5 @@ bold:
 code:
     "`"
 
-list: "* "
-sub list: key(tab *) 
+list: "- "
+sub list: key(tab -) 

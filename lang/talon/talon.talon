@@ -13,6 +13,16 @@ action(user.code_operator_division): " / "
 action(user.code_operator_assignment): " = "
 action(user.code_comment): "#"
 
+snippet common:
+	"sleep(50ms)"
+	key(enter)
+	"key(ctrl-space)"
+	key(enter)
+	"sleep(80ms)"
+	key(enter)
+	"key(tab)"
+	key(enter)
+	
 dot talon: insert(".talon")
 #defintion blocks for the context
 action block:

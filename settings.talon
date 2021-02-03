@@ -7,7 +7,7 @@ settings():
     #set the max number of command lines per page in help
     user.help_max_command_lines_per_page = 50
     # set the max number of contexts display per page in help
-    user.help_max_contexts_per_page = 20
+    user.help_max_contexts_per_page = 30
     # The default amount used when scrolling continuously
     user.mouse_continuous_scroll_amount = 80
     #stop continuous scroll/gaze scroll with a pop
@@ -19,7 +19,7 @@ settings():
 	#hide cursor when mouse_wake is called to enable zoom mouse
     user.mouse_wake_hides_cursor = 0
     #the amount to scroll up/down (equivalent to mouse wheel on Windows by default)
-    user.mouse_wheel_down_amount = 120
+    user.mouse_wheel_down_amount = 200
 	
 # uncomment tag to enable mouse grid
 # tag(): user.mouse_grid_enabled

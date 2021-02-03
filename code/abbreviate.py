@@ -227,4 +227,11 @@ ctx.lists["user.abbreviation"] = {
     "October": "Oct",
     "November": "Nov",
     "December": "Dec",
+    "Monday": "Mon",
+    "Tuesday": "Tue",
+    "Wednesday": "Wed",
+    "Thursday": "Thu",
+    "Friday": "Fri",
+    "Saturday": "Sat",
+    "Sunday": "Sun",
 }

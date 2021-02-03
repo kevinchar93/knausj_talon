@@ -52,7 +52,7 @@ bold: key(cmd-b)
 (strike | strikethrough): key(cmd-shift-x)
 mark all read: key(shift-esc)
 mark channel read: key(esc)
-(clear | scrap | scratch): key(cmd-a backspace)
+# (clear | scrap | scratch): key(cmd-a backspace)
     # Files and Snippets
 (slack | lack) upload: key(cmd-u)
 (slack | lack) snippet: key(cmd-shift-enter)

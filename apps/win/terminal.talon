@@ -1,4 +1,5 @@
 os: windows
+app: Visual Studio Code
 app: Windows Command Processor
 app: cmd.exe
 app: ssh.exe
@@ -54,6 +55,7 @@ find in directory:
 # comment or remove tags for command sets you don't want
 tag(): user.file_manager
 tag(): user.git
+# tag(): user.oraclejet
 tag(): user.kubectl
 tag(): user.tabs
 tag(): terminal
@@ -76,8 +78,29 @@ Cat: "cat "
   key(ctrl-c)
   key(ctrl-c)
 
-# (Fragrant|vagrant): "vagrant "
+(Fragrant|vagrant) box: "vagrant box "
+(Fragrant|vagrant) connect: "vagrant connect "
+(Fragrant|vagrant) global status: "vagrant global-status"
+(Fragrant|vagrant) halt: "vagrant halt "
+(Fragrant|vagrant) init: "vagrant init "
+(Fragrant|vagrant) login: "vagrant login "
+(Fragrant|vagrant) package: "vagrant package "
+(Fragrant|vagrant) plug-in: "vagrant plugin"
+(Fragrant|vagrant) port: "vagrant port "
+(Fragrant|vagrant) provision: "vagrant provision "
+(Fragrant|vagrant) power shall: "vagrant powershell "
+(Fragrant|vagrant) ssh: "vagrant ssh "
+(Fragrant|vagrant) reload: "vagrant reload "
+(Fragrant|vagrant) resume: "vagrant resume "
+(Fragrant|vagrant) status: "vagrant status "
+(Fragrant|vagrant) suspend: "vagrant suspend "
+(Fragrant|vagrant) up: "vagrant up"
+(Fragrant|vagrant) version: "vagrant version "
+(Fragrant|vagrant) destroy : "vagrant destroy "
+windows username: "kecharle"
 (Fragrant|vagrant) : "vagrant "
+
+
 net cat: "nc "
 Ping: "ping "
 (N map | In map | en map): "nmap "
@@ -87,8 +110,7 @@ interrupt: key(ctrl-c)
 jobs: "jobs "
 system control: "systemctl "
 system control status: "systemctl status "
-NPM: "npm "
-NPM install: "npm install "
+
 node: "node "
 List: "ls "
 grable: "gradle"
@@ -121,3 +143,34 @@ action(user.file_manager_open_parent):
     key(enter)
     user.file_manager_refresh_title()
 
+
+
+oh (yet | jet)       : "ojet "
+oh (yet | jet) build : "ojet build "
+oh (yet | jet) create: "ojet create "
+oh (yet | jet) add   : "ojet add "
+oh (yet | jet) clean : "ojet clean "
+oh (yet | jet) help  : "ojet help "
+oh (yet | jet) list  : "ojet list "
+oh (yet | jet) serve : "ojet serve "
+
+code: "code "
+
+(engine X | engine ex): "nginx "
+
+
+################################################################################
+# NPM
+
+NPM: "npm "
+NPM install: "npm install "
+NPM developer install: "npm install -D "
+NPM run [<user.text>]:
+  "npm run "
+  insert(user.text or "")
+# NPM install: "npm install "
+
+
+################################################################################
+# Pip
+pip install: "pip install "

@@ -50,14 +50,14 @@ redo that               : edit.redo()
 volume up               : key(volup)
 volume down             : key(voldown)
 mute                    : key(mute)
-play next               : key(next)
-play previous           : key(prev)
-(play | pause)          : key(play_pause)  
+# play next               : key(next)
+# play previous           : key(prev)
+# (play | pause)          : key(play_pause)  
 funny                   : "ha ha"
 spacey                  : " = "
 dashing                 : " - "
 #wipe: key(backspace)
-
+(engine X | engine ex): "nginx"
 ([Lynn | Lennox | Lynn ox | lie nux | lin nix]): "Linux"
 
 (pad | padding): 

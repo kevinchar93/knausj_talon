@@ -135,8 +135,8 @@ go next mark: user.vscode("Bookmarks: Jump to Next")
 go last mark: user.vscode("Bookmarks: Jump to Previous")
 
 # Folding
-fold that: user.vscode("editor.fold")
-unfold that: user.vscode("editor.unfold")
+fold: user.vscode("editor.fold")
+expand: user.vscode("editor.unfold")
 fold those: user.vscode("editor.foldAllMarkerRegions")
 unfold those: user.vscode("editor.unfoldRecursively")
 fold all: user.vscode("editor.foldAll")

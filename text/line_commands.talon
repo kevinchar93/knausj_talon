@@ -13,7 +13,7 @@ comment [line] <number>:
 comment <number> until <number>: 
     user.select_range(number_1, number_2)
     code.toggle_comment()
-clear [line] <number>:
+clear line <number>:
     edit.jump_line(number)
     user.select_range(number, number)
     edit.delete()
