@@ -19,6 +19,8 @@ app: bash.exe
 app: /Console Emulator/
 app: windows_terminal
 app: windows_command_processor
+app: windows_terminal
+and win.title: /Command Prompt/
 -
 change age: "chage -d "
 Touch: "touch "
@@ -54,10 +56,10 @@ find in directory:
 
 # comment or remove tags for command sets you don't want
 tag(): user.file_manager
+tag(): user.generic_terminal
 tag(): user.git
 # tag(): user.oraclejet
 tag(): user.kubectl
-tag(): user.tabs
 tag(): terminal
 
 run last: key(up enter)
@@ -129,7 +131,7 @@ kill all:
   key(enter)
   
 action(user.file_manager_refresh_title):
-	insert("title %CD%")
+	insert("title Command Prompt: %CD%")
 	key(enter)
 
 #action(user.file_manager_go_back):
