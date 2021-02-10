@@ -71,3 +71,50 @@ action(browser.submit_form):
 
 action(browser.toggle_dev_tools):
 	key(cmd-alt-i)
+
+[open] (console | consul):
+	key(cmd-alt-j)
+
+elements:
+	key(cmd-alt-c)
+
+next panel:
+	key(cmd-])
+last panel:
+	key(cmd-[)
+
+device mode:
+	key(cmd-shift-m)
+
+inspect element:
+	key(cmd-shift-c)
+
+run command:
+	key(cmd-shift-p)
+
+refresh:
+	key(cmd-r)
+
+hard refresh:
+	key(cmd-shift-r)
+
+open file:
+	key(cmd-p)
+
+step over:
+	key(cmd-')
+
+step into:
+	key(cmd-)
+
+line number:
+	key(ctrl-g)
+
+clean console:
+	key(ctrl-l)
+
+Flip:
+	key(ctrl-tab)
+
+flop:
+	key(ctrl-shift-tab) 

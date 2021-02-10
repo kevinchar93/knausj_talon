@@ -1,4 +1,4 @@
-os: windows
+os: mac
 app: Visual Studio Code
 app: Windows Command Processor
 app: cmd.exe
@@ -6,6 +6,7 @@ app: ssh.exe
 app: /git-cmd/
 app: /^sh/
 app: ConEmuC64.exe
+app: apple_terminal
 app: ConEmu64.exe
 app: conhost.exe
 app: conemu-cyg-64.exe

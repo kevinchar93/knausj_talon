@@ -107,9 +107,9 @@ go next mark: key(ctrl-k ctrl-n)
 go last mark: key(ctrl-k ctrl-p)
 
 # Folding
-fold toggle: key(ctrl-m ctrl-m)
-fold toggle all: key(ctrl-m ctrl-l)
-fold definitions: key(ctrl-m ctrl-o)
+# fold toggle: key(ctrl-m ctrl-m)
+# fold toggle all: key(ctrl-m ctrl-l)
+# fold definitions: key(ctrl-m ctrl-o)
 
 #Debugging
 break point: key(f9)

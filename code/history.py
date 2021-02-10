@@ -4,7 +4,7 @@ from talon import imgui, Module, speech_system, actions, app
 # command_history_display of them.
 mod = Module()
 setting_command_history_size = mod.setting("command_history_size", int, default=50)
-setting_command_history_display = mod.setting("command_history_display", int, default=10)
+setting_command_history_display = mod.setting("command_history_display", int, default=5)
 
 hist_more = False
 history = []

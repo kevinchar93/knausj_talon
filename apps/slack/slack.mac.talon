@@ -63,3 +63,4 @@ action(user.messaging_upload_file): key(cmd-u)
 emote <user.text>: "{text}"
 toggle left sidebar: key(cmd-shift-d)
 toggle right sidebar: key(cmd-.)
+send: key(cmd-enter)

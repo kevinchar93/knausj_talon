@@ -32,4 +32,7 @@ suspend:
 resume:
   insert("fg")
   key(enter)
-
+flop:
+  key(ctrl-shift-tab)
+flip:
+    key(ctrl-tab)
