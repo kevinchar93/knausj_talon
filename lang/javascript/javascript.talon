@@ -128,9 +128,6 @@ action(user.code_operator_bitwise_left_shift_assignment): " <<= "
 action(user.code_operator_bitwise_right_shift): " >> "
 action(user.code_operator_bitwise_right_shift_assignment): " >>= "
 
-[state] const: "const "
-new constant: 
-	"const "
 
 state let: "let "
 new variable:

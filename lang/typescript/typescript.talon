@@ -6,6 +6,8 @@ tag(): user.code_operators
 tag(): user.code_comment
 tag(): user.code_generic
 
+type String: "string"
+
 settings():
     user.code_private_function_formatter = "PRIVATE_CAMEL_CASE"
     user.code_protected_function_formatter = "PRIVATE_CAMEL_CASE"

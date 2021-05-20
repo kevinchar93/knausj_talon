@@ -110,3 +110,6 @@ action(browser.submit_form):
 
 action(browser.toggle_dev_tools):
 	key(ctrl-shift-i)
+
+copy title:
+	key(alt-shift-c)

@@ -9,6 +9,3 @@ katie root: user.terminal_change_directory_root()
 clear screen: user.terminal_clear_screen()
 run last: user.terminal_run_last()
 kill all: user.terminal_kill_all()
-
-
-node: "node "

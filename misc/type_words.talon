@@ -2,7 +2,7 @@
 type  control: "ctrl"
 type  alter: "alt"
 type  shift: "shift"
-
+# type string: "String"
 
 # direction keys
 type up: "up"

@@ -16,9 +16,19 @@ else: "else "
 Log: "console.log("
 Directory: "console.dir("
 
-react create element:
-    "rece"
-    sleep(50ms)
-    key(ctrl-space)
-    sleep(100ms)
-    key(tab)
+
+(divider | Dave):
+    'div'
+
+(span):
+    'span'
+
+(ordered list):
+    'ol'
+
+
+(unordered list):
+    'ul'
+
+(list item):
+    'li'

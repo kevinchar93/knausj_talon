@@ -84,8 +84,8 @@ outdent [line]                         : key(ctrl-[)
 (file end | ending)                    : key(ctrl-end)   
 (booze | nick | cruise up)             : key(alt-pageup)
 (Drew's | (knack | nack) | cruise down): key(alt-pagedown)
-# [fold region | fold ]                  : key(ctrl-shift-[)
-# [unfold region | expand ]              : key(ctrl-shift-])
+fold                  : key(ctrl-shift-[)
+expand              : key(ctrl-shift-])
 # fold all subregions                    : key(ctrl-k ctrl-[)
 # unfold all subregions                  : key(ctrl-k ctrl-])
 # fold all regions                       : key(ctrl-k ctrl-0)
@@ -206,6 +206,8 @@ Tips:
     key(ctrl-k)
     key(ctrl-i)
 
+(run|ron) format:
+    key(alt-shift-f)
 snippet:
     key(ctrl-shift-p)
     "insert snippet"

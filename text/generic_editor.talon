@@ -54,7 +54,8 @@ go way up:
 	edit.page_up()
 
 # selecting
-((select | sell) all): key(cmd-a)
+((select | sell) all):
+	edit.select_all()
 
 ((select | sell) line): 
 	edit.line_start()

@@ -1,4 +1,3 @@
-os: mac
 app: Visual Studio Code
 app: Windows Command Processor
 app: cmd.exe
@@ -103,10 +102,15 @@ Cat: "cat "
 windows username: "kecharle"
 (Fragrant|vagrant) : "vagrant "
 
+(yarn|Yaron|yon|yawn) : "yarn "
+(yarn|Yaron|yon|yawn) add: "yarn add "
+(yarn|Yaron|yon|yawn) install: "yarn install "
+(yarn|Yaron|yon|yawn) info: "yarn info "
+OCI: 'oci '
 
 net cat: "nc "
 Ping: "ping "
-(N map | In map | en map): "nmap "
+# (N map | In map | en map): "nmap "
 firewall command: "firewall-cmd "
 interrupt: key(ctrl-c)
 [ta | tar]: "tar "
@@ -131,9 +135,9 @@ kill all:
   insert("y")
   key(enter)
   
-action(user.file_manager_refresh_title):
-	insert("title Command Prompt: %CD%")
-	key(enter)
+# action(user.file_manager_refresh_title):
+# 	insert("title Command Prompt: %CD%")
+# 	key(enter)
 
 #action(user.file_manager_go_back):
 #    key("alt-left")
@@ -141,11 +145,13 @@ action(user.file_manager_refresh_title):
 #action(user.file_manager_go_forward):
 #    key("alt-right")
 
-action(user.file_manager_open_parent):
-    insert("cd ..")
-    key(enter)
-    user.file_manager_refresh_title()
+# action(user.file_manager_open_parent):
+#     insert("cd ..")
+#     key(enter)
+#     user.file_manager_refresh_title()
 
+NVM: "nvm "
+node: "node "
 
 
 oh (yet | jet)       : "ojet "

@@ -15,6 +15,7 @@ Any do                  : "any do"
 run vim                 : "vim "
 run make                : "make\n"
 run clean               : "make clean\n"
+run dist clean          : "make distclean\n"
 make directory          : "mkdir "
 (jay son | jason )      : "json"
 (http | htp)            : "http"
@@ -88,3 +89,9 @@ word streak:
 slap:
 	edit.line_end()
 	key(enter)
+
+VS code:
+	'vscode'
+
+quake:
+	key(ctrl-')
