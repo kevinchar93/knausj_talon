@@ -5,17 +5,8 @@ app: Code.exe
 -
 
 # =========== File Menu ===========
-new file       : key(ctrl-n)
-new window     : key(alt-f w enter)
-open file      : key(ctrl-o)
-open folder    : key(ctrl-k ctrl-o)
-save           : key(ctrl-s)
-save as        : key(ctrl-shift-s)
-save all       : key(ctrl-k s)
 close folder   : key(ctrl-k f)
 close workspace: key(ctrl-k f)
-# close editor:
-# close window:
 
 # =========== Edit Menu ===========
 replace files: key(ctrl-shift-h)
@@ -23,15 +14,6 @@ search files : key(ctrl-shift-f)
 redo         : key(ctrl-z)
 replace      : key(ctrl-h)
 search       : key(ctrl-f)
-# undo: (undo)
-# cut: (cut)
-# copy: (stoush)
-# paste: (spark)
-# find: (search)
-# find in files: (search files)
-# toggle line comment: (comment)
-# toggle block comment (block comment)
-# emmett expand abbreviation (tab)
 
 # =========== Selection Menu ===========
 select all                        : key(ctrl-a)
@@ -56,50 +38,39 @@ shrink selection                  : key(shift-alt-left)
 # ==================== General ====================
 (command [pallet | palette]): key(ctrl-shift-p)
 open                        : key(ctrl-p)
-new (window | instance)     : key(ctrl-shift-n)
-close (window | instance)   : key(ctrl-shift-w)
-[user] settings             : key(ctrl-,)
-keyboard shortcuts          : key(ctrl-k ctrl-s)
-keyboard shortcuts          : key(ctrl-k ctrl-s)
-copy path                   : key(ctrl-k ctrl-shift-c)
-open link:
-    key(ctrl-shift-p)
-    skip()
-    insert("Open Link")
-    skip()
-    key(enter)
 
 # ==================== Basic Editing ====================
 move [line] up                         : key(alt-up)
 move [line] down                       : key(alt-down)
+
 copy [line] up                         : key(alt-up)
 copy [line] down                       : key(alt-down)
-delete line                            : key(shift-alt-k)
-insert line below                      : key(ctrl-enter)
-insert line above                      : key(ctrl-shift-enter)
+
+[insert] line below                      : key(ctrl-enter)
+[insert] line above                      : key(ctrl-shift-enter)
+
 jump to matching [bracket]             : key(ctrl-shift-\)
+
 indent [line]                          : key(ctrl-])
 outdent [line]                         : key(ctrl-[)
+
 (file begin | beginning)               : key(ctrl-home)
 (file end | ending)                    : key(ctrl-end)   
-(booze | nick | cruise up)             : key(alt-pageup)
-(Drew's | (knack | nack) | cruise down): key(alt-pagedown)
+
 fold                  : key(ctrl-shift-[)
 expand              : key(ctrl-shift-])
-# fold all subregions                    : key(ctrl-k ctrl-[)
-# unfold all subregions                  : key(ctrl-k ctrl-])
-# fold all regions                       : key(ctrl-k ctrl-0)
-# unfold all regions                     : key(ctrl-k ctrl-j)
+
 comment                                : key(ctrl-/)
 block comment                          : key(shift-alt-a)
 word wrap                              : key(alt-z)
+
 tag:
     key(ctrl-/)
     insert("OSGD-TODO: ")
 
 
 # ==================== Navigation ====================
-[show] all symbols         : key(ctrl-t)
+find all symbols         : key(ctrl-t)
 go-to line                 : key(ctrl-g)
 [go to] symbol             : key(ctrl-shift-o)
 [show] problems panel      : key(ctrl-shift-m)
@@ -197,21 +168,17 @@ task archive             : key(ctrl+shift+a)
 
 # =========== Integrated Terminal ===========
 terminal show            : key(ctrl-#)
-(terminal focus) : key(ctrl-shift-alt-t)
-terminal create          : key(ctrl-shift-`)
-terminal home            : key(ctrl-home)
-terminal end             : key(ctrl-end)
-[open] recent            : key(ctrl-r)
-Tips: 
-    key(ctrl-k)
-    key(ctrl-i)
+# (terminal focus) : key(ctrl-shift-alt-t)
+# terminal create          : key(ctrl-shift-`)
+# terminal home            : key(ctrl-home)
+# terminal end             : key(ctrl-end)
+# [open] recent            : key(ctrl-r)
+# Tips: 
+#     key(ctrl-k)
+#     key(ctrl-i)
 
 (run|ron) format:
     key(alt-shift-f)
-snippet:
-    key(ctrl-shift-p)
-    "insert snippet"
-    key(enter)
 
 # action(user.ide_refactor):
 #   key(ctrl-a)

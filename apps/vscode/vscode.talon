@@ -14,6 +14,8 @@ action(app.tab_previous): user.vscode("workbench.action.previousEditorInGroup")
 action(app.tab_reopen): user.vscode("workbench.action.reopenClosedEditor")
 action(app.window_close): user.vscode("workbench.action.closeWindow")
 action(app.window_open): user.vscode("workbench.action.newWindow")
+new window: 
+  user.vscode("workbench.action.newWindow")
 
 #talon code actions
 action(code.toggle_comment): user.vscode("editor.action.commentLine")
@@ -22,6 +24,14 @@ action(code.toggle_comment): user.vscode("editor.action.commentLine")
 action(edit.indent_more): user.vscode("editor.action.indentLines")
 action(edit.indent_less): user.vscode("editor.action.outdentLines")
 action(edit.save_all): user.vscode("workbench.action.files.saveAll")
+save:
+  edit.save()
+save as: 
+  user.vscode("workbench.action.files.saveAs")
+open file:
+  user.vscode("workbench.action.files.openFile")
+open folder:
+  user.vscode("workbench.action.files.openFolder")
 
 # splits.py support begin
 action(user.split_clear_all): user.vscode("View: Single Column Editor Layout")
@@ -71,8 +81,8 @@ panel switch: user.vscode("workbench.action.togglePanel")
 panel terminal: user.vscode("workbench.panel.terminal.focus")
 
 # Settings
-show settings: user.vscode("workbench.action.openGlobalSettings")
-show shortcuts: user.vscode("workbench.action.openGlobalKeybindings")
+[show] settings: user.vscode("workbench.action.openGlobalSettings")
+[show] shortcuts: user.vscode("workbench.action.openGlobalKeybindings")
 show snippets: user.vscode("workbench.action.openSnippets")
 
 # Display
@@ -87,9 +97,9 @@ file hunt [<user.text>]:
   user.vscode("Go to File")
   sleep(50ms)
   insert(text or "")
-file copy path: user.vscode_ignore_clipboard("File: Copy Path of Active File") 
+copy path: user.vscode_ignore_clipboard("File: Copy Path of Active File") 
 file create sibling: user.vscode("File: New File")  
-file create: user.vscode("File: New Untitled File")
+(file create | new file): user.vscode("File: New Untitled File")
 file open folder: user.vscode("File: Reveal in File Explorer")
 #todo: rename isn't working.
 #file rename active: 
