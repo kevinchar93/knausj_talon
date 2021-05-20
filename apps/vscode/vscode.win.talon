@@ -11,7 +11,7 @@ close workspace: key(ctrl-k f)
 # =========== Edit Menu ===========
 replace files: key(ctrl-shift-h)
 search files : key(ctrl-shift-f)
-redo         : key(ctrl-z)
+undo         : key(ctrl-z)
 replace      : key(ctrl-h)
 search       : key(ctrl-f)
 

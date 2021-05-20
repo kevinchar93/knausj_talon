@@ -4,22 +4,22 @@ app: vscode
 -
 
 # =========== File Menu ===========
-close folder   : key(ctrl-k f)
-close workspace: key(ctrl-k f)
+close folder   : key(cmd-k f)
+close workspace: key(cmd-k f)
 
 # =========== Edit Menu ===========
-replace files: key(ctrl-shift-h)
-search files : key(ctrl-shift-f)
-redo         : key(ctrl-z)
-replace      : key(ctrl-h)
-search       : key(ctrl-f)
+replace files: key(cmd-shift-h)
+search files : key(cmd-shift-f)
+undo         : key(cmd-z)
+replace      : key(alt-cmd-h)
+search       : key(cmd-f)
 
 # =========== Selection Menu ===========
-select all                        : key(ctrl-a)
+select all                        : key(cmd-a)
 expand selection                  : key(shift-alt-right)
 shrink selection                  : key(shift-alt-left)
-([cursor | curse] [below | down ]): key(alt-ctrl-down)
-([cursor | curse] [above | up ])  : key(alt-ctrl-up)
+([cursor | curse] [below | down ]): key(alt-cmd-down)
+([cursor | curse] [above | up ])  : key(alt-cmd-up)
 # copy line up:
 # copy line down:
 # move line up:
@@ -35,8 +35,8 @@ shrink selection                  : key(shift-alt-left)
 # column selection mode:
 
 # ==================== General ====================
-(command [pallet | palette]): key(ctrl-shift-p)
-open                        : key(ctrl-p)
+(command [pallet | palette]): key(cmd-shift-p)
+open                        : key(cmd-p)
 
 # ==================== Basic Editing ====================
 move [line] up                         : key(alt-up)
@@ -45,40 +45,40 @@ move [line] down                       : key(alt-down)
 copy [line] up                         : key(alt-up)
 copy [line] down                       : key(alt-down)
 
-[insert] line below                      : key(ctrl-enter)
-[insert] line above                      : key(ctrl-shift-enter)
+[insert] line below                      : key(cmd-enter)
+[insert] line above                      : key(cmd-shift-enter)
 
-jump to matching [bracket]             : key(ctrl-shift-\)
+jump to matching [bracket]             : key(cmd-shift-\)
 
-indent [line]                          : key(ctrl-])
-outdent [line]                         : key(ctrl-[)
+indent [line]                          : key(cmd-])
+outdent [line]                         : key(cmd-[)
 
-(file begin | beginning)               : key(ctrl-home)
-(file end | ending)                    : key(ctrl-end)   
+(file begin | beginning)               : key(cmd-home)
+(file end | ending)                    : key(cmd-end)   
 
-fold                  : key(ctrl-shift-[)
-expand              : key(ctrl-shift-])
+fold                  : key(cmd-shift-[)
+expand              : key(cmd-shift-])
 
-comment                                : key(ctrl-/)
+comment                                : key(cmd-/)
 block comment                          : key(shift-alt-a)
 word wrap                              : key(alt-z)
 
 tag:
-    key(ctrl-/)
+    key(cmd-/)
     insert("OSGD-TODO: ")
 
 
 # ==================== Navigation ====================
-find all symbols         : key(ctrl-t)
-go-to line                 : key(ctrl-g)
-[go to] symbol             : key(ctrl-shift-o)
-[show] problems panel      : key(ctrl-shift-m)
+find all symbols         : key(cmd-t)
+go-to line                 : key(cmd-g)
+[go to] symbol             : key(cmd-shift-o)
+[show] problems panel      : key(cmd-shift-m)
 (next error | next warning): key(f8)
 (previous | last) error    : key(shift-f8)
 (previous | last) warning  : key(shift-f8)
 forward                    : key(alt-right)
 backwards         : key(alt-left)
-[move] focus               : key(ctrl-m)
+[move] focus               : key(cmd-m)
 
 # ==================== Search and Replace ====================
 next find                : key(f3)
@@ -93,14 +93,14 @@ toggle whole word        : key(alt-w)
 # ==================== Rich Languages Editing ====================
 
 # ==================== Editor Management ====================
-close editor               : key(ctrl-w)
-close all editors          : key(ctrl-k ctrl-w)
-show explorer              : key(ctrl-shift-e)
-(side one | west)          : key(ctrl-1)
-(side two | east)          : key(ctrl-2)
-flip                       : key(ctrl-k ctrl-pagedown)
-flop                       : key(ctrl-k ctrl-pageup)
-keep open                  : key(ctrl-k enter)
+close editor               : key(cmd-w)
+close all editors          : key(cmd-k cmd-w)
+show explorer              : key(cmd-shift-e)
+(side one | west)          : key(cmd-1)
+(side two | east)          : key(cmd-2)
+flip                       : key(cmd-k cmd-pagedown)
+flop                       : key(cmd-k cmd-pageup)
+keep open                  : key(cmd-k enter)
 
 # =========== File Management ===========
 # =========== Display ===========
@@ -108,85 +108,85 @@ keep open                  : key(ctrl-k enter)
 # ===========  Diff Tool ===========
 (next change | goneck | go next)     : key(alt-f5)
 (last change | gopreev | go preev): key(alt-shift-f5)
-stage [selected]           : key(ctrl-k ctrl-alt-s)
-revert [selected]          : key(ctrl-k ctrl-r)
-commit [staged]            : key(ctrl-k ctrl-alt-c)
+stage [selected]           : key(cmd-k cmd-alt-s)
+revert [selected]          : key(cmd-k cmd-r)
+commit [staged]            : key(cmd-k cmd-alt-c)
 [open] changes:
-    key(ctrl-shift-p)
+    key(cmd-shift-p)
     insert("Git: Open Changes")
     key(enter)
 
 # ==================== Display ====================
 fullscreen       : key(f11)
-explorer         : key(ctrl-shift-e)
-open extensions  : key(ctrl-shift-x)
-source control   : key(ctrl-shift-g g)
-search details   : key(ctrl-shift-j)
-markdown preview : key(ctrl-k v)
-(Zenn | zen) mode: key(ctrl-alt-z)
+explorer         : key(cmd-shift-e)
+open extensions  : key(cmd-shift-x)
+source control   : key(cmd-shift-g g)
+search details   : key(cmd-shift-j)
+markdown preview : key(cmd-k v)
+(Zenn | zen) mode: key(cmd-alt-z)
 
 # =========== Alignment ===========
 align characters: key(alt-=)
 
 # ========= Context Menu =========== 
 rename symbol         : key(f2)
-change all occurrences: key(ctrl-f2)
+change all occurrences: key(cmd-f2)
 [go to] definition    : key(f12)
 [show] references     : key(shift-f12)
-complete              : key(ctrl-space)
-sidebar               : key(ctrl-b)
+complete              : key(cmd-space)
+sidebar               : key(cmd-b)
 
 # ==================== MetaJump ====================
-skip                                   : key(ctrl-shift-alt-j)
+skip                                   : key(cmd-shift-alt-j)
 # skip                                   : key(alt-/)
 # skip <user.key>                        : key(alt-/ key)
-line                                   : key(ctrl-shift-alt-l)
+line                                   : key(cmd-shift-alt-l)
 # line                                   : key(alt-/ enter)
 select                                 : key(alt-shift-/)
 # select <user.key>                      : key(alt-shift-/ key)
-new cursor                             : key(alt-ctrl-/)
+new cursor                             : key(alt-cmd-/)
 centre                                 : key(alt-m)
 top                                    : key(alt-t)
 bottom                                 : key(alt-b)
 
 # ==================== Bookmarks ===============================================
-bookmark                               : key(alt-ctrl-k)
+bookmark                               : key(alt-cmd-k)
 book list                              : key(alt-\)
 book list all                          : key(alt-#)
-book next                              : key(alt-ctrl-l)
-(book [prove |  please | pre- | preev]): key(alt-ctrl-j)
+book next                              : key(alt-cmd-l)
+(book [prove |  please | pre- | preev]): key(alt-cmd-j)
 
 # ==================== ToDo ====================
 make task                : key(alt-enter)
 task [done | complete]   : key(alt-d)
 task [start | started]   : key(alt-s)
 task [cancel | cancelled]: key(alt-c)
-task archive             : key(ctrl+shift+a)
+task archive             : key(cmd+shift+a)
 
 # =========== Debug ===========
 
 # =========== Integrated Terminal ===========
-# terminal show            : key(ctrl-#)
-# (terminal focus) : key(ctrl-shift-alt-t)
-# terminal create          : key(ctrl-shift-`)
-# terminal home            : key(ctrl-home)
-# terminal end             : key(ctrl-end)
-# [open] recent            : key(ctrl-r)
+# terminal show            : key(cmd-#)
+# (terminal focus) : key(cmd-shift-alt-t)
+# terminal create          : key(cmd-shift-`)
+# terminal home            : key(cmd-home)
+# terminal end             : key(cmd-end)
+# [open] recent            : key(cmd-r)
 # Tips: 
-#     key(ctrl-k)
-#     key(ctrl-i)
+#     key(cmd-k)
+#     key(cmd-i)
 
 (run|ron) format:
     key(alt-shift-f)
 
 # action(user.ide_refactor):
-#   key(ctrl-a)
-#   key(ctrl-shift-i)
-#   key(ctrl-s)
+#   key(cmd-a)
+#   key(cmd-shift-i)
+#   key(cmd-s)
 
 # action(user.ide_refactor_in_line):
-#   key(ctrl-shift-i)
-#   key(ctrl-s)
+#   key(cmd-shift-i)
+#   key(cmd-s)
 
 # action(user.ide_refactor_rename):
 #   key(f2)
@@ -201,16 +201,16 @@ task archive             : key(ctrl+shift+a)
 #   key(alt-right)
 
 # action(user.ide_up_cursor):
-#   key(ctrl-shift-up)
+#   key(cmd-shift-up)
 
 # action(user.ide_down_cursor):
-#   key(ctrl-shift-down)
+#   key(cmd-shift-down)
 
 # action(user.ide_toggle_terminal):
-#   key(ctrl-`)
+#   key(cmd-`)
 
 # action(user.ide_terminal_new):
-#   key(ctrl-shift-`)
+#   key(cmd-shift-`)
 
 # action(user.ide_terminal_focus_previous):
 #   key(alt-left)
@@ -219,7 +219,7 @@ task archive             : key(ctrl+shift+a)
 #   key(alt-right)
 
 # action(user.ide_terminal_trash):
-#   key(ctrl-shift-delete)
+#   key(cmd-shift-delete)
 
 # action(user.ide_terminal_scroll_down):
 #   key(shift-pgdown)
@@ -228,29 +228,29 @@ task archive             : key(ctrl+shift+a)
 #   key(shift-pgup)
 
 # action(user.ide_toggle_comment):
-#   key(ctrl-/)
+#   key(cmd-/)
 
 # action(user.ide_smart):
-#   key(ctrl-space)
+#   key(cmd-space)
 
 # action(user.ide_parameter_hints):
-#   key(ctrl-shift-space)
+#   key(cmd-shift-space)
 
 # action(user.ide_done):
 #   key(tab)
 
 # action(user.ide_show_explorer):
-#   key(ctrl-shift-e)
+#   key(cmd-shift-e)
 
 # action(user.ide_show_search):
-#   key(ctrl-shift-f)
+#   key(cmd-shift-f)
 
 # action(user.ide_show_source_control):
-#   key(ctrl-shift-g)
+#   key(cmd-shift-g)
 
 # action(user.ide_show_debug):
-#   key(ctrl-shift-d)
+#   key(cmd-shift-d)
 
 # action(user.ide_show_extensions):
-#   key(ctrl-shift-x)
+#   key(cmd-shift-x)
 
